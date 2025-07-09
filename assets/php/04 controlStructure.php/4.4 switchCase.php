@@ -3,29 +3,35 @@
 
     /* syntax
 
-    if(  ){
-
-    }elseif( ){
-
-    }else{
-
+    swithc(  ){
+        case():
+            echo" ";
+            break;
+        
     }
     */
 
-    $score = 83;
-        if( $score >= 80 ){
-            echo"Your result is:" . " A+ \n";
-        }elseif( $score >= 70 ){
-            echo"Your result is:" . " A \n";
-        }elseif( $score >= 60 ){
-            echo"Your result is:" . " A- \n";
-        }elseif( $score >= 50 ){
-            echo"Your result is:" . " B \n";
-        }elseif( $score >= 40 ){
-            echo"Your result is:" . " C \n";
-        }elseif( $score >= 33 ){
-            echo"Your result is:" . " D \n";
-        }else{
-            echo"Your result is:" . " Faild \n";
+    $score = 43;
+        switch( $score ){
+            case($score >= 80):
+                echo"Your result is: A+";
+                break;
+            case( $score >= 60 ):
+                echo"Your resul is: A";
+                break;
+            case( $score >= 50 ):
+                echo"Your resul is: B";
+                break;
+            case( $score >= 40 ):
+                echo"Your resul is: D";
+                break;
+            case( $score >= 33 ):
+                echo"Your resul is: C";
+                break;
+            default:
+                echo"Your resul is: Failed";
+            
         }
+        
     
+  

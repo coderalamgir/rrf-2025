@@ -11,3 +11,11 @@
         echo"$i \n";
         $i++;
     }
+
+    $number = 1;
+    $product = 1;
+    while( $number <= 10 ){
+        $product *= $number;
+        $number++;
+    }
+    echo " The product of numbers from 1 to 10 is: " . $product;

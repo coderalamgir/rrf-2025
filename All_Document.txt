@@ -1,0 +1,35 @@
+Wordpress Theme development part-3.
+
+প্রাথমিক বিষয় সমূহঃ
+1. Assets link
+2. classic theme
+3. Block theme
+4. Child theme
+5. Text domain: text domain এর নাম সবার থেকে আলাদা হতে হবে। যেমন- এখানে lessonlms
+6. Hook
+## CSS ফাইল এবং Image ফাইলকে ডাইনামিক করতে  function
+<?php echo get_template_directory_uri ( ); ?>
+
+wordpress theme ৩ প্রকার। যথা-
+1. classic theme
+2. Block theme
+3. Hybrid theme
+
+functions.php ফাইল
+fucntions.php ফাইল এর মধ্যে আমরা যত জায়গায় ফাংশনের নাম লিখব তত জায়গায় ফাংশন নামের  আগে টেক্স ডোমেন লিখতে হয়। যেমন-
+function lessonlms_theme_scripts() {
+
+     //এখানে সকল style এবং Script  লিংকগুলো থাকে। Link কে wordpress এর ভাষায় enqueue বলে।
+
+}
+এখানে, 
+theme_scripts  হলো ফাংশন নাম।
+lessonlms হলো টেক্স ডোমেন। যা prefix হিসেবে আগে বসে।
+
+******************************
+function এর মধ্যে লিংকগুলো hook এর সাথে attach করে দেওয়া হয়।
+hook syntax: 
+add_action(  " হুক ", " এখানে থাকে ফাংশন নাম");
+=> ‍add_action ( "wp_enqueue_scripts",  "  lessonlms_theme_scripts " );
+
+=>add_action এর মধ্যে  দুইটা প্যারামিটার থাকে।

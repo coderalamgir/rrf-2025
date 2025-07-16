@@ -1,6 +1,16 @@
 <?php
+
+/*
+<<<<<<< HEAD
  //  আলোচ্য বিষয়ঃ
  /*
+=======
+
+    //  আলোচ্য বিষয়ঃ
+
+   /*
+
+>>>>>>> b1789157011e79584e342ea9eee0ac4468016720
     >> Regular Function
     >> Paramerer, Argument যুক্ত ফাংশন।
     >> Return Valu
@@ -74,5 +84,26 @@ $txt = process(function($name){
 });
 
 echo" $txt ";
+
+<<<<<<< HEAD
+
+=======
+
+
+   function greet($name2){
+      return "Hello, " . $name2 . "! Welcome to our site. \n" ;
+   }
+
+   echo greet("Sadika");
+
+
+   $siteName = "My Awesome Website";
+   function showSiteName(){
+      global $siteName;
+      echo "Welcome to " . $siteName . "!";   
+   }
+   showSiteName();
+>>>>>>> b1789157011e79584e342ea9eee0ac4468016720
+
 
 */

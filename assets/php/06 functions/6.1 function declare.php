@@ -1,6 +1,6 @@
 <?php
  //  আলোচ্য বিষয়ঃ
- 
+ /*
     >> Regular Function
     >> Paramerer, Argument যুক্ত ফাংশন।
     >> Return Valu
@@ -75,3 +75,4 @@ $txt = process(function($name){
 
 echo" $txt ";
 
+*/

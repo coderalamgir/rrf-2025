@@ -86,6 +86,7 @@
         echo "dessert: " . $menu["dessert"] . "\n";
 
     */
-
+    $cars = array("BMW","TOYOTA", "NEXUS");
+    print_r($cars);
     
     

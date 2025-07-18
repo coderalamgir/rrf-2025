@@ -1,0 +1,35 @@
+ 
+ 
+ Topics Covered in This Video:
+✔️ What is a Database?
+✔️ What is a Table?
+    >> Row এবং column এর মাধ্যমে টেবিল তৈরি হয়।
+
+✔️ What is the Relationship between Database and Table?
+    >> 
+
+✔️ What is a Record and a Field?
+    >> এসকিউএল এ Row কে বলা হয় Record এবং column কে বলা হয় Field.
+
+✔️ Full Explanation of Relational Databases (RDBMS)
+    >> একাধিক ডাটাবেজ টেবিল এর মধ্যে যে সংযোগকারী সম্পর্ক তাকে রিলেশনাল ডাটাবেজ বলে।
+
+✔️ What is a Primary Key and Why It’s Important?
+    >>Primary key কে অবশ্যই Unique হতে হবে।
+
+✔️ What is a Foreign Key and How It Connects Tables?
+    >> একটি টেবিল এর Primary key যখন অন্য টেবিলে ব্যবহার করা হয় তখন তাকে foreign key বলে।
+
+✔️ What is a Composite Key and When to Use It?
+    >> একাধিক foreign key কে একসাথে Composite key বলে।
+    
+✔️ Overview of the Required Tools: Laragon and phpMyAdmin
+
+💻 Practical Implementation Roadmap for This Course (Coming Soon in Next Videos):
+🔹 Create a customers table with fields like name, email, phone, address, etc.
+🔹 Insert sample customer data
+🔹 Alter the table to add new columns
+🔹 Update specific records in the table
+🔹 Delete records based on condition
+🔹 Add indexes to speed up searches
+🔹 Modify existing column definitions

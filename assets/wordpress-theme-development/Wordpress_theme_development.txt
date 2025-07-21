@@ -1,0 +1,72 @@
+🧠 What You'll Learn in Class #4:
+✅ Creating header.php in WordPress Theme
+
+Writing the basic HTML5 structure using WordPress functions
+
+Using language_attributes(), bloginfo('charset'), and bloginfo('name') dynamically
+
+Adding wp_head() to ensure plugins and themes can load resources
+
+Applying body_class() for dynamic body classes — useful for styling and page targeting
+
+✅ Creating footer.php in WordPress Theme
+
+Proper placement of JavaScript files before the closing body tag
+
+Using wp_footer() for plugin compatibility and script injection
+
+Linking a custom JavaScript file using get_template_directory_uri()
+
+Wrapping up the HTML structure correctly
+
+✅ How to Enqueue CSS & JS in functions.php
+
+Using wp_enqueue_style() for loading stylesheets
+
+Using wp_enqueue_script() for loading JavaScript files
+
+Adding third-party styles like Google Fonts, Slick Carousel, and Boxicons
+
+Understanding the difference between get_template_directory_uri() and get_stylesheet_uri()
+
+Proper dependency handling and versioning
+
+Ensuring jQuery loads before dependent scripts
+
+Avoiding hardcoded link and script tags — using WordPress standards for performance and compatibility
+
+🧾 functions.php includes:
+Google Fonts
+
+Slick CSS & JS
+
+Boxicons
+
+Main theme styles (style.css, responsive.css)
+
+JavaScript file (script.js)
+
+All enqueued using wp_enqueue_style() and wp_enqueue_script() under the action hook wp_enqueue_scripts
+
+🔍 Why This Class is Critical:
+✅ These files (header.php, footer.php, and functions.php) are the backbone of every WordPress theme. Without correctly loading them, your site can break, load slowly, or have plugin conflicts. In this video, we follow WordPress best practices that ensure a scalable, maintainable, and high-performance theme setup.
+
+🎯 By the end of this class, you will be able to:
+➡️ Break down static HTML and convert it into reusable template parts
+➡️ Load all CSS and JavaScript assets correctly and dynamically
+➡️ Ensure your theme is compatible with any plugin that uses wp_head or wp_footer
+➡️ Avoid common mistakes in theme development related to hardcoded links
+➡️ Follow best practices for theme performance and SEO
+
+📌 This Video is Ideal For:
+➡️ WordPress beginners and intermediate developers
+➡️ Freelancers building custom client themes
+➡️ Students preparing for theme development jobs
+➡️ Anyone converting static HTML templates into dynamic WordPress themes
+
+📺 Upcoming in the Series:
+➡️ Dynamic content with WordPress Loop
+➡️ Creating page templates
+➡️ Integrating menus and widget areas
+➡️ Advanced theme customization
+➡️ Theme submission preparation

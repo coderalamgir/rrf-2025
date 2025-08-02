@@ -8,13 +8,24 @@
 অনেক লাইন কমেন্ট
 অনেক লাইন কমেন্ট */
 
-CREATE DATABASE shop;  -- shop নামে নতুন ডাটাবেজ তৈরি করলাম।
-
-
-
 --SQL = Structured Query Language  কাঠামোবদ্ধ অনুসন্ধান ভাষা।
-
 --প্রতিটা sql statement এর শেষে ; সেমিকোলন দিতে হয়।
+
+ CREATE DATABASE shop;  -- shop নামে নতুন ডাটাবেজ তৈরি করলাম।
+ SHOW DATABASES;      --কতগুলো ডাটাবেজ আছে জানতে।
+ DROP DATABASE shop;    --ডাটাবেজ মুছে ফেলতে।
+
+ CREATE TABLE customers(  --নতুন টেবিল তৈরি একই সাথে ফিল্ড বা কলাম এর নাম, ডাটাটাইপ এবং সাইজ সহ।
+	PersonID INT(255),
+    First_Name VARCHAR(255),
+    Last_Name VARCHAR(255),
+    Address VARCHAR(255),
+    City VARCHAR(255)
+);
+
+
+
+
 
 SELECT * FROM students_details; --এখানে * অর্থ সব কলাম বাছায় কর students_details টেবিল থেকে।
 

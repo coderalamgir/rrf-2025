@@ -1,6 +1,6 @@
 <?php
 
-    /*
+
     // Array হলো মাল্টিপল ডাটা টাইপ স্টোর করে এমন ভ্যারিয়েবল।
     
     1. Single array
@@ -85,8 +85,101 @@
         echo "special: " . $menu["special"] . "\n";
         echo "dessert: " . $menu["dessert"] . "\n";
 
-    */
+  
     $cars = array("BMW","TOYOTA", "NEXUS");
     print_r($cars);
+
     
+    $fruits = [ "Mango", "Jackfruit", "Lichi" ];
+    foreach ( $fruits as $fruit ) {
+        // echo $fruit . " \n ";
+    }
+
+    $person = [
+        'Name' => 'Alamgir',
+        'City' => 'Kushtia',
+        'Phone' => '01715684469'
+    ];
+    foreach( $person as $key => $value ) {
+        echo" $key => $value \n";
+    };
+  
+    // print_r( $person );
+
+  
+    $person = ["Alamgir", "Hakimpur", "01715000000"];
+    print_r($person);
+    var_dump($person);
+    foreach( $person as $man ) {
+        echo"$man " . "\n";
+    };
+    unset($person[1]);
+    print_r($person);
+
+
+
+    ////////////// associative array থেকে extract ///////////////
     
+    $user = [ 'name' => 'Akib', 'phone' => '017150000000', 'email' => 'akib@gmail.com' ];
+    extract($user);
+    echo $name;
+    echo "\n";
+    echo $phone;
+    echo "\n";
+    echo $email ;
+
+    ////////////// range(); function এর সাহায্যে array থেকে array_slice(); ///////////////
+
+    $numbers = range(1,20);
+    $sliced = array_slice($numbers, 5, 5);
+    print_r($numbers);
+    print_r($sliced);
+ 
+       ////////////// array_filter(); খালি মান বাদ দেওয়া। 
+
+       $data = ['Mango', '', null];
+       // array_filter($data);
+       $filtered = array_filter($data);  // একটা variable এর মধ্যে রাখলাম।
+       print_r($filtered);
+       // print_r($data);
+    
+    ////////////// array_merge(); একের অধিক ‍এ্যারেকে একসাথে করাকে মার্জ বলে। 
+
+    $arr1 = ["Mango", "Jackfruit"];
+    $arr2 = ["Litchi", "Pineapple"];
+    $merged = array_merge($arr1, $arr2);
+    // print_r($merged);
+    
+    $arr1 [1] = "Bluberry";
+    print_r($arr1);
+
+    
+    ////////////// in_array(); নির্দিষ্ট ভ্যালু আছে কিনা চেক করা।
+    $fruits = ['Mango', 'Jackfruit'];
+
+    if(in_array('Banana', $fruits)) {
+        echo"Found!";
+    }else{
+        echo"NOT Found!";
+    }
+   
+    $student = [
+        "name" => "Akib",
+        "age" => "5",
+        "grade" => "A"
+    ];
+    foreach($student as $key => $value){
+        echo $key . " : " . $value . "\n";
+    };
+    
+    $students = [
+        ["name" => "Akib", "age" => "4", "grade" => "A"],
+        ["name" => "Hasib", "age" => "8", "grade" => "B"],
+        ["name" => "Mim", "age" => "6", "grade" => "C"]
+    ];
+
+    foreach( $students as $student ){
+        foreach($student as $key => $value){
+            echo $key . ": " . $value . "\n";
+        };
+    };

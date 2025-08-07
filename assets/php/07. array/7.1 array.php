@@ -183,7 +183,7 @@
             echo $key . ": " . $value . "\n";
         };
     };
-    */
+   
 
 
     $person = [
@@ -197,5 +197,31 @@
     foreach ($person as $key => $value) {
         echo " $key : $value \n" ;
     }
-
+  
     // var_dump($person);
+
+
+    // array_filter(); function এর ব্যবহার। কোন এ্যারে থেকে খালি মানগুলো বাদ দিয়ে যে মানগুলো আছে সেগুলো বের করে আনা।
+    $data = ['Mango', 'Banana', '', null, false];
+    // print_r($data);
+    //print_r(array_filter($data)); // এভাবেও ফিল্টার করা যায়। আবার array_filter(); function কে ১টা ভ্যারিয়েবল এর মধ্যেও রাখা যায়। তারপর print_r(); করা যায় যেমন-
+    $filtered = array_filter($data);
+    print_r($filtered);
+
+
+    // extract function এর মাধ্যমে এ্যারে থেকে একটি একটি করে মান বের করে নিয়ে আসতে পারি।
+    $user = [
+        'Name' => 'Sufol',
+        'gmail' => 'sufol@gmail.com',
+        'phone' => '01715000000'
+    ];
+    // print_r($user);
+    extract($user);
+    echo $Name;
+    */
+    // array_slice(); function ব্যবহার করে একটি বা একের অধিক আইটেম এক বারে কাটা যায়।
+    $numbers = range(1, 10 );
+    // print_r($numbers);
+    $sliced = array_slice($numbers, 4, 2);
+    print_r($sliced);
+    

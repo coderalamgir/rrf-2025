@@ -67,7 +67,7 @@
 
     const color = "Blue";
     console.log(color);
-    */
+ 
    // stirng জোড়া//////////////////////////////।
 
    const income = 100;
@@ -93,6 +93,39 @@
    const Number = 50;
    const get = 9;
    console.log(Number % get);
+
+
+    //Typeof অপারেটর ব্যবহার করে কোনটা কোন ধরনের ডাটাটাইপ তা জানা যায়। /////////////////
+   const megaCity = "Dhaka";
+   console.log(megaCity);
+   console.log(typeof megaCity);
+
+   const temperature = 102.5;
+   console.log(temperature);
+   console.log(typeof temperature);
+
+   const isHungry = true;
+   console.log(isHungry);
+   console.log(typeof isHungry);
+
+   const isRich = false;
+   console.log(isRich);
+   console.log(typeof isRich);
+     */
+    // parsIt অপারেটর ব্যবহার করে string থেকে number ডাটাটাইপ রুপান্তর /////////////////
+    const fatherAge = " 50 ";
+    const fatherAgeNumber = parseInt(fatherAge);
+    console.log(typeof fatherAgeNumber);
+    console.log(typeof fatherAge);
+
+    const input = 'x20';
+    const inputNum = parseInt(input);
+    console.log(inputNum);
+
+    const sugar = parseInt('1.2222');
+    console.log(sugar);
+    
+
 
 
 

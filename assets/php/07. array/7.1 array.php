@@ -73,12 +73,10 @@
 
     //>>>>>>>> 5. Hybrid array হলো একটি array যেখানে কিছু মান সংখ্যার মাধ্যমে চিহ্নিত থাকে এবং কিছু মান নাম দিয়ে চিহ্নিত থাকে। এটি ২ ধরনের index ব্যবহার করে।
     $menu = array(
-
         1 => "Margherita Pizza",
         2 => "Spaghetti Carbonara",
         "special" => "Grilled Salmon",
         "dessert" => "Chocolate Lava Cake",
-
     );
     // print_r($menu);
     // var_dump($menu);
@@ -186,3 +184,18 @@
         };
     };
     */
+
+
+    $person = [
+        'Name' => 'Akib',
+        'City' => 'Kushita',
+        'Phone' => ' 01715000000',
+        'Occupation' => 'Student',
+        'School Name' => 'Hakimpur gov. primary School.'
+    ];
+
+    foreach ($person as $key => $value) {
+        echo " $key : $value \n" ;
+    }
+
+    // var_dump($person);

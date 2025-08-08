@@ -1,11 +1,10 @@
 <?php
-
-
-    /*
+   declare(strict_types = 1);
+ 
 
     // Array হলো মাল্টিপল ডাটা টাইপ স্টোর করে এমন ভ্যারিয়েবল।
     
-    1. Single array
+    1. Single2 array
     2. Nested array
     3. Numerical array
     4. Associative array
@@ -218,10 +217,18 @@
     // print_r($user);
     extract($user);
     echo $Name;
-    */
+
     // array_slice(); function ব্যবহার করে একটি বা একের অধিক আইটেম এক বারে কাটা যায়।
     $numbers = range(1, 10 );
     // print_r($numbers);
     $sliced = array_slice($numbers, 4, 2);
     print_r($sliced);
-    
+
+  $numbers2 = range(1, 20, 2); // এখানে 2 এর অর্থ হল প্রতিবার দুই করে পার্থক্য।
+  print_r($numbers2);
+
+  //array_merge(); এর সাহায্যে একের অধিক এ্যারেকে জোড়া লাগানো যায়।
+  $arra1 = ['Mango', 'Banana'];
+  $arra2 = ['Litch', 'Banana'];
+  $merged = array_merge($arra1, $arra2);
+  print_r($merged);

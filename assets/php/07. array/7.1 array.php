@@ -3,7 +3,7 @@
  
 
     // Array হলো মাল্টিপল ডাটা টাইপ স্টোর করে এমন ভ্যারিয়েবল।
-    
+    /*
     1. Single2 array
     2. Nested array
     3. Numerical array
@@ -12,7 +12,7 @@
     6. Indexed with key array
     7. multidimensional array
 
-
+    */
 
      // >>>>>> 1.Single array: যখন একটি array এর মধ্যে অন্য কোন array থাকে না তখন তাকে Single array বলে।
 

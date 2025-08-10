@@ -12,7 +12,7 @@
     6. Indexed with key array
     7. multidimensional array
 
-    */
+
 
      // >>>>>> 1.Single array: যখন একটি array এর মধ্যে অন্য কোন array থাকে না তখন তাকে Single array বলে।
 
@@ -232,3 +232,5 @@
   $arra2 = ['Litch', 'Banana'];
   $merged = array_merge($arra1, $arra2);
   print_r($merged);
+    */
+ 

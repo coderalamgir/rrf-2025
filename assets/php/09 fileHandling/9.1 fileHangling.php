@@ -1,5 +1,5 @@
 <?php
-    declare(strict_types = 1);
+   // declare(strict_types = 1);
 
     /*
 
@@ -20,4 +20,25 @@
     rename("another.txt", "Changed.txt");
     mkdir("my_folder");
 
+  
+   // mkdir("new_folder");
+    $text_file = fopen("text_file.txt", "w");
+
+    fwrite($text_file, " PHP handling start from here.");
+
+    $text_file = fopen("text_file.txt", "r");
+
+    echo fread($text_file, filesize("text_file.txt"));
+
+    fclose($text_file);
     */
+
+    // প্রশ্ন: একটি ফোল্ডার তৈরি করুন। তার মধ্যে ১টি ফাইল তৈরি করুন। এই ফাইলে ভেতরে লিখুন “ যেখানে প্রযুক্তির গল্প হয় বাংলা ভাষায়। ”
+
+    // file_put_contents("NewFolder/NewFile.txt", "যেখানে প্রযুক্তির গল্প হয় বাংলা ভাষায়।");
+    // echo file_get_contents("NewFolder/NewFile.txt");
+    $fileName = "akib_folder";
+    $fileContent = "My name is Akib islam";
+    file_put_contents($fileName, $fileContent);
+    echo file_get_contents($fileName);
+    // 

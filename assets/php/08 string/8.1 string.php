@@ -1,7 +1,7 @@
 <?php
    declare(strict_types = 1);
 
-
+/*
   $x = "Hello";
   $y = "World";
   $z = "$x $y";
@@ -57,3 +57,25 @@
          string.
    EOT;
    echo $text;      
+
+   $name = "Akib Islam";
+
+   //heredoc Syntax on string datatype 
+
+   $message = <<<EOT
+      Hi, My name
+         is
+            $name
+   EOT;
+   echo "$name" . "\n";
+   echo "$message" . "\n";
+
+*/
+   $password = "myPass1";  ///strlen(); ফাংশন দিয়ে পাসওয়ার্ড এর  দৈর্ঘ্য বের করা হয়েছে।
+   strlen($password);
+
+   if(strlen($password) < 8) {
+      echo "পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে। ";
+   } else {
+      echo "পাসওয়ার্ড গ্রহণযোগ্য। ";
+   }

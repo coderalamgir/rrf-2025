@@ -1,8 +1,7 @@
 <?php
    // declare(strict_types = 1);
 
-    /*
-
+   
     $file = fopen("new.txt", "w");
     fwrite($file, "Projukti plus");
 
@@ -10,7 +9,7 @@
     echo fread($file, filesize("new.txt"));
     fclose($file);
 
-
+   /*
     $file = fopen("new2.txt", "w"); // এখানে, new2.txt হলো ফাইল এর নাম এবং w হলো ফাইল মোডস অর্থাৎ লেখার জন্য।
     fwrite($file, "We are learning PHP about file & folder "); //$file এর অর্থ হলো এই ভ্যারিয়েবল এর মধ্যে যে ফাইল আছে তার মধ্যে  We are learning PHP about file & folder এই টেক্সট লিখলাম।
     $file = fopen("new2.txt", "r");  // "r" এর অর্থ হলো ফাইলটি পড়ার মুড এ আছে।
@@ -31,7 +30,7 @@
     echo fread($text_file, filesize("text_file.txt"));
 
     fclose($text_file);
-    */
+
 
     // প্রশ্ন: একটি ফোল্ডার তৈরি করুন। তার মধ্যে ১টি ফাইল তৈরি করুন। এই ফাইলে ভেতরে লিখুন “ যেখানে প্রযুক্তির গল্প হয় বাংলা ভাষায়। ”
 
@@ -43,7 +42,7 @@
    //  echo file_get_contents($fileName);
 
 
-/*
+
     declare(strict_types = 1);
     // date(); function এর ব্যবহার।
     echo date("d/m/y") . "\n";
@@ -117,4 +116,29 @@
     
     file_put_contents("projukti_plus/contenTwo.txt", "ফোল্ডার  এর  মধ্যে নতুন ফাইল তৈরি করে এর ভিতরে লিখলাম। ");
     echo file_get_contents("projukti_plus/contenTwo.txt");
-    */
+
+   // $fileName2 = "unlink.txt";
+   // $fileCotent2 = "Delete with unlink function.";
+   // file_put_contents($fileName2, $fileCotent2);
+   // file_get_contents($fileName2);
+
+   // echo __DIR__;
+   // echo dirname(__FILE__);
+   $fileName = "F:/practice2/rrf-2025/assets/php/09 fileHandling/akib_folder";
+   // rmdir("akib_folder");
+   if(file_exists($fileName)){
+      
+      echo"ফাইলটি পাওয়া গেছে। \n";
+
+      if(rmdir($fileName)){
+         echo"File deleted successfully. \n";
+      }else{
+         echo"Failed to delete the log file. \n";
+      }
+
+
+   }else{
+      echo"ফাইলটি পাওয়া যাই নি। \n";
+   }
+
+*/

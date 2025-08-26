@@ -25,13 +25,35 @@
             .form-container, .table-container {
                 margin-left: 30px;
             }
-            input#name {
+            input#name, input#email, input#phone {
                 width: 70%;
                 padding: 10px;
                 outline: none;
                 border-radius: 5px;
             }
-                    </style>
+            .submit-btn{
+                font-size: 16px;
+                text-transform: uppercase;
+                padding: 10px 15px;
+                margin-top: 10px;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+            table {
+                width: 95%;
+                padding-bottom: 25px;
+                text-align: center;
+            }
+
+            th {
+                background-color: darkcyan;
+                color: #fff;
+                font-size: 18px;
+            }
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+        </style>
 
     </head>
     <body>
@@ -44,7 +66,7 @@
 
             <div class="form-container">
 
-                <form action="" method="get">
+                <form action="" method="POST">
 
                     <div class="form-group">
                         <label for="name">Name:</label><br>
@@ -61,9 +83,11 @@
                         <input type="phone" name="phone" id="phone" required><br><br>
                     </div>
 
-                    <input type="submit" value="submit">
+                    <input class="submit-btn" type="submit" value="submit">
                 </form>
             </div>
+
+           
 
             <!--Form output Table-->
             <div class="form-header">
@@ -83,9 +107,9 @@
 
                         <tbody>
                             <tr>
-                                <td>Akib</td>
-                                <td>akib@gmail.com</td>
-                                <td>01715000000</td>
+                                <td> <?php echo $_POST['name']; ?></td>
+                                <td> <?php echo $_POST['email']; ?></td>
+                                <td> <?php echo $_POST['phone']; ?></td>
                             </tr>
                             <tr>
                                 <td>Hasib</td>

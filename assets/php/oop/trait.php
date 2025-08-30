@@ -27,9 +27,9 @@
         use programmingLanguage_2;
     }
 
-    // Object তৈরি।
+    // Object তৈরি এবং object কে ১টি variable এর মধ্যে রাখি।
     $php_c = new php_c();
-    
+
 
 
 

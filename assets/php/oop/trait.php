@@ -19,7 +19,7 @@
 
     $php = new phpLanguage();
 
-    $php ->  php();
+    // $php -> php();
 
     // একের অধিক trait থেকে  class তৈরি করা হয়েছে।
     class php_c{
@@ -29,6 +29,14 @@
 
     // Object তৈরি এবং object কে ১টি variable এর মধ্যে রাখি।
     $php_c = new php_c();
+
+    // object এর মধ্যে প্রবেশ করব।
+    $php_c -> php();
+    echo "\n";
+    $php_c -> php_c();
+
+
+
 
 
 

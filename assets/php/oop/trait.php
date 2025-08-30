@@ -1,4 +1,6 @@
 <?php
+    /* একাধিক প্যারেন্ট ক্লাস থেকে চাইল্ড ক্লাস তৈরি করতে ট্রেট ব্যবহার করা হয়। কীওয়ার্ড সমূহ trait, use */
+
     //১ম trait
     trait programmingLanguage_1{
         public function php(){

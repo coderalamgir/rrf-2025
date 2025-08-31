@@ -114,4 +114,47 @@
     $account = new BankAccount();
     $account -> deposit( 1000 );
     echo $account -> getBalance();
-        ***********/
+
+
+    // class তৈরি করি। যা static object / class.
+    class product{
+        // property তৈরি করি। variable কে OOp তে property বলে।
+        public $name = "Mobile";
+        public $price = "200";
+        public $category;
+        public $stock;
+        public $SKU;
+        public $brand;
+    }
+
+    //object তৈরি করি।
+    $product_1 = new product();     //object টি কে product_1 নামক ১টি variable এর মধ্যে রাখলাম।
+
+    // object এর মধ্যে প্রবেশ।
+    echo $product_1->name;      // এখানে $product_1->name অংশটুকু সম্পূর্ন variable হিসাবে বিবেচিত হবে।
+
+
+    ***********/    
+    // class তৈরি করি। যা dynamic object / class.
+    class product{
+        // property তৈরি করি। variable কে OOp তে property বলে।
+        public $name;
+        public $price;
+        public $category;
+        public $stock;
+        public $SKU;
+        public $brand;
+
+        //method তৈরি করি। OOP তে function কে method বলে।
+        public function showDetails(){
+            echo "Name: $this->name, Price: $this->price ";
+        }
+
+    }
+
+    //object তৈরি করি।
+    $product_1 = new product();     //object টি কে product_1 নামক ১টি variable এর মধ্যে রাখলাম।
+
+    // object এর মধ্যে প্রবেশ।
+    //echo $product_1->name;      // এখানে $product_1->name অংশটুকু সম্পূর্ন variable হিসাবে বিবেচিত হবে।
+    echo $product_1->showDetails();

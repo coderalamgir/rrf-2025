@@ -318,3 +318,25 @@
     //echo $product_1->name;      // এখানে $product_1->name অংশটুকু সম্পূর্ন variable হিসাবে বিবেচিত হবে।
     echo $product_1->showDetails();
     ***********/ 
+
+    //class
+    class car{
+
+        //properties
+        public $color;
+        public $model;
+
+        //method
+        public function start(){
+            return "This car is starting.";
+        }
+    }
+    //Object
+    $myCar = new car();
+
+    //Access to property & Method
+    echo $myCar->color = "Red";
+    echo"\n";
+    echo $myCar->model = "Toyota";
+    echo"\n";
+    echo $myCar->start();

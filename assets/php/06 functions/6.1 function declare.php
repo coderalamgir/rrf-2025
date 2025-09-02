@@ -1,5 +1,4 @@
 <?php
-
 /*
 <<<<<<< HEAD
  //  আলোচ্য বিষয়ঃ
@@ -106,4 +105,24 @@ echo" $txt ";
 >>>>>>> b1789157011e79584e342ea9eee0ac4468016720
 
 
+function print_name($name, $age) {
+   echo "Name: $name, Age: $age \n";
+}
+
+print_name("Sadika Sultana", 9);
+print_name("Akib Isalam", 4);
+print_name("Alamgir", 42);
+
+
+//Default parameter & Default argument
+function full_name($first_name, $last_name) {
+   echo $first_name . ' ' . $last_name . "\n";
+}
+full_name("Hello", "World");
+full_name("Hello", "Bangladesh");
+full_name("Hello", "Friends");
 */
+function full_name( $fname, $lname, $separator = " " ){  //$separator = " " এটাকে বলা হয় ডিফল্ট প্যারামিটার।
+   echo $fname . $separator . $lname ;
+}
+full_name("Akib", "Islam");

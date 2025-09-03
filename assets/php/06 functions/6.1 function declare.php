@@ -121,8 +121,15 @@ function full_name($first_name, $last_name) {
 full_name("Hello", "World");
 full_name("Hello", "Bangladesh");
 full_name("Hello", "Friends");
-*/
+
 function full_name( $fname, $lname, $separator = " " ){  //$separator = " " এটাকে বলা হয় ডিফল্ট প্যারামিটার।
    echo $fname . $separator . $lname ;
 }
 full_name("Akib", "Islam");
+
+
+function add($number_1, $number_2 ) {
+   return $number_1 - $number_2;
+}
+echo add(10,10);
+*/

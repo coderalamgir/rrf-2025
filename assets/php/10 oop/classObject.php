@@ -9,10 +9,8 @@
      method কি ?
         -> class এর ভিতরে থাকা function কে method বলে।
         -> method object এর কর্ম সম্পাদন করে।
-
-
-
-
+        
+    // class তৈরি।
     class Man {
         public $name;
         public $age ;
@@ -317,7 +315,7 @@
     // object এর মধ্যে প্রবেশ।
     //echo $product_1->name;      // এখানে $product_1->name অংশটুকু সম্পূর্ন variable হিসাবে বিবেচিত হবে।
     echo $product_1->showDetails();
-    ***********/ 
+
 
     //class
     class car{
@@ -340,3 +338,149 @@
     echo $myCar->model = "Toyota";
     echo"\n";
     echo $myCar->start();
+
+
+    //class তৈরি।
+    class product{
+        public $name;
+        public $price;
+        public $category;
+        public $brand;
+        public $stock;
+        public $SKU;
+    }
+    // Object তৈরি।
+    $product1 = new product();
+
+    //Object এ প্রবেশ।
+    $product1->name = "Mobile \n";
+    $product1->price = "4000 \n";
+    $product1->category = "Technology \n";
+    $product1->brand = "Walton \n";
+    $product1->stock = "40 \n";
+    $product1->SKU = "Tech001 \n";
+
+    echo $product1->name;
+    echo $product1->price;
+    echo $product1->brand;
+    echo $product1->category;
+    echo $product1->stock;
+    echo $product1->SKU;
+
+    // Object তৈরি।
+    $product2 = new product();
+
+    //Object এ প্রবেশ।
+    $product2->name = "Motorcycle \n";
+    $product2->price = "350000 \n";
+    $product2->category = "Vehicle \n";
+    $product2->brand = "TVS \n";
+    $product2->stock = "20 \n";
+    $product2->SKU = "vehicle001 \n";
+
+    echo $product2->name;
+    echo $product2->price;
+    echo $product2->brand;
+    echo $product2->category;
+    echo $product2->stock;
+    echo $product2->SKU;
+
+
+    // Object তৈরি।
+    $product3 = new product();
+
+    //Object এ প্রবেশ।
+    $product3->name = "Laptop \n";
+    $product3->price = "50000 \n";
+    $product3->category = "Technology \n";
+    $product3->brand = "Samsung \n";
+    $product3->stock = "10 \n";
+    $product3->SKU = "tech002 \n";
+
+    //Print object.
+    echo $product3->name;
+    echo $product3->price;
+    echo $product3->brand;
+    echo $product3->category;
+    echo $product3->stock;
+    echo $product3->SKU;
+
+
+    // make class
+    class person{
+        public $name;
+        public $age;
+        public $email;
+        public $phone;
+        public $address;
+        public $occupation;
+    }
+
+    //Make Object.
+    $person1 = new person();
+
+    //Access to object.
+    $person1->name = "Akib \n";
+    $person1->email = "akib@gmail.com \n";
+    $person1->age = "4 \n";
+    $person1->phone = "01722000000 \n";
+    $person1->address = "Kushtia \n";
+    $person1->occupation = "Developer \n";
+
+    //print object.
+    echo $person1->name ;
+    echo $person1->email;
+    echo $person1->age;
+    echo $person1->phone;
+    echo $person1->address;
+    echo $person1->occupation;
+    
+    //Make Object.
+    $person2 = new person();
+
+    //Access to object.
+    $person2->name = "Sadika Sultana \n";
+    $person2->email = "sadika@gmail.com \n";
+    $person2->age = "9 \n";
+    $person2->phone = "01715000000 \n";
+    $person2->address = "Daulatpur \n";
+    $person2->occupation = "Developer \n";
+
+    //print object.
+    echo $person2->name ;
+    echo $person2->email;
+    echo $person2->age;
+    echo $person2->phone;
+    echo $person2->address;
+    echo $person2->occupation;
+
+
+    // make class
+    class person{
+        public $name;
+        public $age;
+        public $email;
+        public $phone;
+        public $address;
+        public $occupation;
+
+        //Make Method
+        public function showProfile(){
+            echo"Name: $this->name \n Age: $this->age \n Email: $this->email \n Phone: $this->phone \n Current Address: $this->address \n Occupation: $this->occupation \n";
+        }
+    }
+
+    //Make Object.
+    $person1 = new person();
+
+    //Access to object
+    $person1->name = "Alamgir";
+    $person1->age = "age";
+    $person1->email = "alamgirabc6@gmail.com";
+    $person1->phone = "01715000000";
+    $person1->address = "Kushtia";
+    $person1->occupation = "Developer";
+
+    //Print object.
+    $person1->showProfile();
+    ***********/ 

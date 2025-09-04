@@ -1,11 +1,6 @@
 <?php
 /*
     echo"Hello PHP";
-
-
-
-
-
     $name = "Akib";
 
 

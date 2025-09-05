@@ -1,11 +1,12 @@
 <?php
+    
     /*
     inheritance কি ?
     >> একটা class এর ভেতর থেকে properties ও method গুলোকে অন্য class এ ব্যবহার করাকে inheritanc বলে।
     >> inheritance এ কখনোই parent class এর মাধ্যমে object তৈরি করব না।
     >> inherit করতে extends কীওয়ার্ড ব্যবহার করতে হয়।
     
-    */
+
 
     // class তৈরি করি।
     class person{
@@ -41,3 +42,40 @@
 
     // মান দেখাতে।
     $student1->showStudentInfo();
+
+
+    //Shape নামে একটি class নিলাম। 
+    class shape{
+        //properties
+        public $color;
+
+        //Method
+        public function showColor() {
+            echo "Color: $this->color";
+        }
+    }
+    //Child Class
+    class rectangle extends shape{
+        //properties
+        public $width;
+        public $height;
+
+        //method
+        public function area() {
+            return $this->width * $this->height;
+        }
+    }
+    // Make Object
+    $r = new rectangle(); // Child class কে object তৈরি করতে হয়। এবং object কে একটি variable এর মধ্যে রাখতে হয়।
+
+    //যেহেতু class dynamic তাই এখন properties এর মান সেট করতে হবে।
+    $r->color = "Green";
+    $r->width = "10";
+    $r->height = "5";
+
+    // এবার মানগুলো দেখাতে হবে।
+    echo"Area of this rectangle is: " .  $r->area();
+    echo"\n";
+    echo $r->showColor();
+
+    */

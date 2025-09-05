@@ -31,9 +31,8 @@
     echo "\n";
     $sadika = new Man();
     echo $sadika -> info ( "Sadika", 9, "Hakimpur");
-    
-    */
-    /**********
+
+
     echo $akib -> name = "Akib Islam";
     echo "<br>";
     echo $akib -> age = "4";
@@ -350,17 +349,17 @@
     class Product{
         //properties তৈরি করি।
         public $name = "Mobile";
-        public $price = "2000";
+        public $price = "2000 \n";
         public $brand;
         public $cagegory;
         public $stock;
         public $SKU;
     }
 
-    //method তৈরি করি।
-    //     public function showDetails(){
-    //         echo "Name: $this->name, price: $this->price";
-    //     }
+    // //method তৈরি করি।
+    public function showDetails(){
+        echo "Name: $this->name, price: $this->price";
+    }
  
 
     //Object তৈরি করি।
@@ -394,4 +393,4 @@
     echo $myCar->model = "Toyota";
     echo"\n";
     echo $myCar->start();
-    ***********/
+    */

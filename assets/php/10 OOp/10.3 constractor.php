@@ -1,4 +1,5 @@
 <?php
+    // __constructor() function এর ব্যবহার।
     // class তৈরি করি।
     class person{
         //class এর মধ্যে properties তৈরি করি। 
@@ -24,3 +25,23 @@
 
     // মান দেখাতে।
     $student1->showInfo();
+
+    /*
+
+    class person{
+        public $name;
+        public $age;
+
+        public function __construct($studentName, $studentAge){
+            $this->name = $studentName;
+            $this->age = $studentAge;
+        }
+
+        public function showInfo() {
+            echo "Name: $this->name, Age: $this->age";
+        }
+    }
+
+    $student1 = new person("Akib Islam", 4);
+    $student1->showInfo();
+        */

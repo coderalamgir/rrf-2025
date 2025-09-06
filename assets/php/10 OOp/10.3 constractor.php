@@ -5,7 +5,7 @@
         public $name;
         public $age;
 
-        //class এর মধ্যে constructor তৈরি করি। auto call করার জন্য যে ফাংশন আছে তার নাম --constructor.
+        //class এর মধ্যে constructor তৈরি করি। auto call করার জন্য যে ফাংশন আছে তার নাম --constructor. এখানে parameter (Variable) গুলো দিয়ে দিতে হয়।
         public function __construct($studentName, $studentAge) {
             $this->name = $studentName;
             $this->age = $studentAge;
@@ -19,7 +19,7 @@
     }
 
     //Object তৈরি করি।
-    $student1 = new person("Akib Islam", 4);
+    $student1 = new person("Akib Islam ", 4);  // এখানে Arguments (Value বা মান) গুলো দিয়ে দিতে হয়।
 
 
     // মান দেখাতে।

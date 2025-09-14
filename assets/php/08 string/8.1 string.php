@@ -70,7 +70,7 @@
    echo "$name" . "\n";
    echo "$message" . "\n";
 
-*/
+
    $password = "myPass1";  ///strlen(); ফাংশন দিয়ে পাসওয়ার্ড এর  দৈর্ঘ্য বের করা হয়েছে।
    strlen($password);
 
@@ -79,3 +79,15 @@
    } else {
       echo "পাসওয়ার্ড গ্রহণযোগ্য। ";
    }
+
+
+
+   */
+
+// 14-09-2025
+   $product = "Laptop";
+   $price = "120000";
+
+   echo"Product Name: " . $product . ". " ."Product Price: " . $price;
+
+

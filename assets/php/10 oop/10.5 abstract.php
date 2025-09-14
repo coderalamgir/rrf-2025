@@ -15,5 +15,5 @@
         }
     }
 
-    $php = new phptuto('PHP'); 
+    $php = new phptuto("PHP"); 
     echo $php->message();

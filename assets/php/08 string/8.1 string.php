@@ -82,12 +82,23 @@
 
 
 
-   */
 
-// 14-09-2025
+
+   // 14-09-2025
    $product = "Laptop";
    $price = "120000";
 
    echo"Product Name: " . $product . ". " ."Product Price: " . $price;
 
 
+   */
+   //Null coalescing operatore প্রথম ভ্যালু null হলে পরবর্তী বা default Value কাজ করে। আর প্রথম ভ্যালু null  না হলে সেই ভ্যালুই কাজ করে। 
+   // syntax null ?? name;
+   $customer = "Akib";
+
+   $customer ?? "Visitor";
+
+   // ১টা ভ্যারিয়েবল এর মধ্যে রাখি।
+   $result = $customer ?? "Visitor";
+
+   echo $result ;

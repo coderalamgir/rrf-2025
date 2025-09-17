@@ -91,7 +91,7 @@
    echo"Product Name: " . $product . ". " ."Product Price: " . $price;
 
 
-   */
+
    //Null coalescing operatore প্রথম ভ্যালু null হলে পরবর্তী বা default Value কাজ করে। আর প্রথম ভ্যালু null  না হলে সেই ভ্যালুই কাজ করে। 
    // syntax null ?? name;
    $customer = "Akib";
@@ -102,3 +102,28 @@
    $result = $customer ?? "Visitor";
 
    echo $result ;
+      
+   //null coalescing operator
+   $customer = "null";
+
+   $customer ?? "Visitor";
+
+   $result = $customer ?? "Visitor";
+   echo"$result";
+
+  // Ternery Operator
+  $score = "80";
+  ($score >= 90) ? "A+" : "NOt A+";
+  $result = ($score >= 90) ? "A+" : "NOt A+";
+  echo"$result";
+    */
+
+  // if ... else 
+
+  $month_name = "  ";
+
+  if( $month_name = "January" ){
+      echo " January ";
+  }else{
+      echo " Nothing";
+  }

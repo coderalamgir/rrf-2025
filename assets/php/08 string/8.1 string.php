@@ -70,7 +70,7 @@
    echo "$name" . "\n";
    echo "$message" . "\n";
 
-*/
+
    $password = "myPass1";  ///strlen(); ফাংশন দিয়ে পাসওয়ার্ড এর  দৈর্ঘ্য বের করা হয়েছে।
    strlen($password);
 
@@ -79,3 +79,51 @@
    } else {
       echo "পাসওয়ার্ড গ্রহণযোগ্য। ";
    }
+
+
+
+
+
+   // 14-09-2025
+   $product = "Laptop";
+   $price = "120000";
+
+   echo"Product Name: " . $product . ". " ."Product Price: " . $price;
+
+
+
+   //Null coalescing operatore প্রথম ভ্যালু null হলে পরবর্তী বা default Value কাজ করে। আর প্রথম ভ্যালু null  না হলে সেই ভ্যালুই কাজ করে। 
+   // syntax null ?? name;
+   $customer = "Akib";
+
+   $customer ?? "Visitor";
+
+   // ১টা ভ্যারিয়েবল এর মধ্যে রাখি।
+   $result = $customer ?? "Visitor";
+
+   echo $result ;
+      
+   //null coalescing operator
+   $customer = "null";
+
+   $customer ?? "Visitor";
+
+   $result = $customer ?? "Visitor";
+   echo"$result";
+
+  // Ternery Operator
+  $score = "80";
+  ($score >= 90) ? "A+" : "NOt A+";
+  $result = ($score >= 90) ? "A+" : "NOt A+";
+  echo"$result";
+    */
+
+  // if ... else 
+
+  $month_name = "  ";
+
+  if( $month_name = "January" ){
+      echo " January ";
+  }else{
+      echo " Nothing";
+  }

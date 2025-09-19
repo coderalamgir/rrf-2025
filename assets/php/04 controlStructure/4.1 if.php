@@ -21,4 +21,34 @@
     if ( $user_name == "akib" ) {
         echo"You login successfull.";
     }
+
+    echo "Sadika sultana \n ";
+    
+    if ( 5 > 3 ){
+        echo "Have a good day!\n";
+    }
+
+    $t = "akib";
+    if ( $t == "akib" ){
+        echo "Have a good day!\n";
+    }
+
+
+    if (5 < 4) {
+    echo "Hello";
+    }
+    echo ", my name is Linus";
+
+
+    $x = 3;
+    if ( $x > 4 ){
+        echo "Hello";
+    }
+    echo ", My name is Akib.\n";
     */
+
+    $y = 5;
+    if ( $y !== 5 ){
+        echo "Hello";
+    }
+    echo ", My name is Sadika sultana.";

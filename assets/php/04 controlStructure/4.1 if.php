@@ -45,10 +45,25 @@
         echo "Hello";
     }
     echo ", My name is Akib.\n";
-    */
+    
 
     $y = 5;
     if ( $y !== 5 ){
         echo "Hello";
     }
     echo ", My name is Sadika sultana.";
+
+    $a = 200;
+    $b = 100;
+    $c = 300;
+    if ( $a > $b && $a < $c ){
+        echo"Both conditions are True.";
+    }
+
+    $t = date("H");
+    if ( $t < "48" ){
+        echo"Have a good day !";
+    } else{
+        echo"Have a good night !";
+    }
+    */

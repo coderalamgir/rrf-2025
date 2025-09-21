@@ -116,14 +116,51 @@
   ($score >= 90) ? "A+" : "NOt A+";
   $result = ($score >= 90) ? "A+" : "NOt A+";
   echo"$result";
-    */
+
 
   // if ... else 
 
-  $month_name = "  ";
+  $month_name = "may";
 
-  if( $month_name = "January" ){
+  if( $month_name == "Jan" ){
       echo " January ";
-  }else{
-      echo " Nothing";
+  } else if ( $month_name == "feb" ) {
+      echo " February ";
+  } else if ( $month_name == "mar" ) {
+      echo " March ";
+  } else if ( $month_name == "apr" ) {
+      echo " April ";
+  } else if ( $month_name == "may" ) {
+      echo " May ";
+  } else if ( $month_name == "jun" ) {
+      echo " June ";
+  } else if ( $month_name == "jul" ) {
+      echo " July ";
+  }  else if ( $month_name == "aug" ) {
+      echo " August ";
+  }  else if ( $month_name == "sep" ) {
+      echo " September ";
+  }  else if ( $month_name == "oct" ) {
+      echo " October ";
+  }  else if ( $month_name == "nov" ) {
+      echo " November ";
+  }  else if ( $month_name == "dec" ) {
+      echo " December ";
+  }  else{
+      echo "Nothing";
   }
+
+  $roll = "nayemur";
+
+  if ( $roll == "rasel" ) {
+      echo " Hello Rasel, You are a Admin. ";
+  } else if ( $roll == "nayemur" ) {
+      echo " Hello Nayemur, You are a Moderator. ";
+  } else if ( $roll == "akib" ) {
+      echo " Hello Akib, You are a Student. ";
+  } else if ( $roll == "sadika" ) {
+      echo " Hello Sadika, You are a Subscriber. ";
+  } else {
+      echo " Nothing ";
+  }
+    */

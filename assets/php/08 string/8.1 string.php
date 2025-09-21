@@ -163,4 +163,26 @@
   } else {
       echo " Nothing ";
   }
-    */
+    
+  // Ternary operator
+  
+  $a = 10;
+  
+  $b = $a < 15 ? "Hello" : "Good bye";
+  echo $b; 
+  // null coalescing operator
+  null ??default;
+*/
+
+//Nested If হলো, একটা if statement এর মধ্যে যদি আরো ১টি if statement থাকে তবে তাকে nested if বলে।
+
+$a = 15;
+if ( $a > 10 ){
+    echo"Above 10 ";
+    if ( $a > 20 ){
+        echo"and also above 20 ";
+    }else{
+        echo"But not above 20 ";
+    }
+
+}

@@ -6,6 +6,8 @@
     # ৪। foreach loop
     
     // while loop এ আমাদের পূর্ব থেকে জানা থাকে না, লুপটি কতবার ঘুরবে বা iteration করবে।
+
+    /*
     $i = 1;
     while( $i <= 5 ){
         echo"$i \n";
@@ -19,3 +21,21 @@
         $number++;
     }
     echo " The product of numbers from 1 to 10 is: " . $product;
+
+    $i = 1;
+    while ( $i <= 5 ) {
+        echo"$i\n";
+        $i++;
+    }
+
+    $userIput = "";
+    $correctPassword = "1234";
+    while ( $userIput  !== $correctPassword ) {
+        readline("সঠিক পাসওয়ার্ড দিন।");
+    }
+    */
+        $i = 1;
+        while ( $i <= 5 ) {
+            echo"$i\n";
+            $i++;
+        }

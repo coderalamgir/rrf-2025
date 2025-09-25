@@ -21,3 +21,11 @@
         echo"Give your password. \n";
         $i++;
     }while ( $i <= 3 );
+
+
+
+    $i = 1;
+    do{
+        echo"Login attempt $i\n";
+        $i++;
+    }while( $i <= 6 );

@@ -4,7 +4,7 @@
 
     // Array হলো মাল্টিপল ডাটা টাইপ স্টোর করে এমন ভ্যারিয়েবল।
     /*
-    1. Single2 array
+    1. Single array
     2. Nested array
     3. Numerical array
     4. Associative array

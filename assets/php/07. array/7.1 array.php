@@ -232,5 +232,18 @@
   $arra2 = ['Litch', 'Banana'];
   $merged = array_merge($arra1, $arra2);
   print_r($merged);
+
+  $user_data = ["Akib", "Sadika", "Alam","Popy"];
+//   echo$user_data[3];
+    // $user_data[] = "Zia";
+    array_push([$user_data = "Hasib"]);
+    
+    print_r($user_data);
+
+    $fruits = ["Mango", "Banana", "Jackfruit", "Blackberry",];
+    foreach ( $fruits as $fruit ) {
+        echo $fruit . "\n";
+    }
     */
- 
+
+    

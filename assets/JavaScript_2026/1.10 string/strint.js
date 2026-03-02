@@ -21,7 +21,7 @@ console.log(`Order #${orderId} has been placed.`);
 console.log(`Total amount to pay $${amount}.`);
 
 
-//User details
+//User details (" ")
 console.log("Order Details:\n ---------------");
 console.log(" Customer Name:\t" + userName + ".");
 console.log(" Location:\t" + userCity + ", " + userCountry + ".");

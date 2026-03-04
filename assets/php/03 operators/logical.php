@@ -73,3 +73,30 @@ $isFreeTime = true;
             echo" আমি গেম খেলতে যাব না। ";
         }
     */
+
+    // Logical AND (&&) Empersand Operator সবগুলো শর্ত সত্য হতে হবে। তবেই সত্য না হলে মিথ্যা।
+
+    $a = 10;
+    $b = 5;
+    if($a > 0 && $b > 0){
+        echo "Both values are positives. \n";
+        }else{
+        echo "Both values are not positives.";
+    }
+
+    $isWeatherNice = true;
+    $isFreeTime = true;
+    if($isWeatherNice && $isFreeTime){
+        echo"আমি পার্কে যাব। \n";
+    }else{
+        echo"আমি পার্কে যাব না।";
+    }
+
+    // Logical OR (||) pipe or bar Operator দুটি শর্ত থাকে যার একটি শর্ত সত্য হলে। তবেই সত্য না হলে মিথ্যা।
+    $x = 10;
+    $y = -3;
+    if($x > 0 || $y > 0){
+        echo " At least one value is positive. \n";
+    }else{
+        echo " At least one value is not positive.";
+    }

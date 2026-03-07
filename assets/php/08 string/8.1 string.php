@@ -172,7 +172,7 @@
   echo $b; 
   // null coalescing operator
   null ??default;
-*/
+
 
 //Nested If হলো, একটা if statement এর মধ্যে যদি আরো ১টি if statement থাকে তবে তাকে nested if বলে।
 
@@ -186,3 +186,61 @@ if ( $a > 10 ){
     }
 
 }
+*/
+
+// String operator বা concatination Operator ( . )
+
+$firstName = "Akib";
+$lastName = "Islam";
+
+$totalName = $firstName . " " . $lastName;
+echo "$totalName\n";
+
+$product = "Laptop";
+$price = 85000;
+echo "Product name:" . $product . ". Product price:" . $price . "BDT\n";
+
+
+
+// spaceship Operator ( <=> )
+    $spaceShip1 = 3 <=> 5;
+    echo $spaceShip1 . "\n";
+
+    $spaceShip2 = 5 <=> 5;
+    echo $spaceShip2 . "\n";
+
+    $spaceShip3 = 6 <=> 5;
+    echo $spaceShip3 . "\n";
+
+    // Null coalescing Operator ( null ?? default ) প্রথমটাই কোন ভ্যালু থাকলে প্রথমটাই হবে। না থাকলে দ্বিতীয়টি হবে।
+    $customer = null;
+    $result = $customer ?? "Visitor";
+    echo $result . "\n"; 
+
+    $score = 32;
+    if ($score >= 40){
+        echo "A+\n";
+    }else{
+        echo"Not A+";
+    }
+
+    // Ternary Operator ( condition ? "true" : "false"; ) সত্য হলে প্রথমটাই হবে। মিথ্যা হলে দ্বিতীয়টি হবে।  if ... else এর সংক্ষিপ্ত রুপ।
+
+    $result = $score >= 50 ? "A+\n" : "Not A+\n";
+    echo $result;
+
+    if($score >= 80){
+        echo " Your grade is: A+\n";
+    }elseif( $score >= 70 ){
+        echo " Your grade is: A\n";
+    }elseif( $score >= 60 ){
+        echo " Your grade is: A-\n";
+    }elseif($score >= 50){
+        echo " Your grade is: B\n";
+    }elseif($score >= 40){
+        echo " Your grade is: C\n";
+    }elseif($score >= 33){
+        echo " Your grade is: D\n";
+    }else{
+        echo " Your grade is: Failled";
+    }

@@ -72,7 +72,7 @@ $isFreeTime = true;
         }else{
             echo" আমি গেম খেলতে যাব না। ";
         }
-    */
+
 
     // Logical AND (&&) Empersand Operator সবগুলো শর্ত সত্য হতে হবে। তবেই সত্য না হলে মিথ্যা।
 
@@ -100,3 +100,4 @@ $isFreeTime = true;
     }else{
         echo " At least one value is not positive.";
     }
+*/

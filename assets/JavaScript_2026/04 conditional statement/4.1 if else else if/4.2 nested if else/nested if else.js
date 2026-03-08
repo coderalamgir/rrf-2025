@@ -2,7 +2,7 @@
 // Nested if else
 // একটা if else এর মধ্যে আরো if else থাকলে তাকে Nested if else বলে।
 
-let a = 100, b = 200, c = 30;
+let a = 100, b = 200 , c = 30;
 
 if( a > b ){
   if( a > c ){

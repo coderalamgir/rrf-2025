@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect JS Files</title>
+  </head>
+  <body>
+
+    <h1 id="demo"></h1>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    <br>
+    <br>
+
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+    <h1 onmouseover="changeColor(this)" onmouseout="restoreColor(this)">Mouse Over Me</h1>
+
+
+
+
+
+    <script>
+    function changeColor(element) {
+        element.style.backgroundColor = 'red';
+        element.style.color = 'white';
+    }
+    function restoreColor(element) {
+        element.style.backgroundColor = 'white'; // Often used with onmouseout
+        element.style.color = "black";
+    }
+    </script>
+
+  
+    
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

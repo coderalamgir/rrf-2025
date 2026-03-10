@@ -1,4 +1,6 @@
 
+
+/*
 // ১টা শর্ত হলে।
 let num = 6;
 if( num > 0 ){
@@ -24,3 +26,18 @@ if( Number > 0 ){
 }else{
   console.log(`${Number} It is not a number.`);
 }
+
+*/
+
+  let marks = 30; 
+
+if( marks >= 33 ) {
+  console.log( `You are passed.\n` );
+}else{
+  console.log( `You are failed. \n` );
+}
+
+
+//Ternary Operator
+
+( marks >= 60 )? console.log(`You are Passed`) : console.log(`You are Passed`);

@@ -1,4 +1,5 @@
 
+/*
 // JavaScript String formating, concatenation & template literals.
 
 let userName = "Akib Islam";
@@ -50,3 +51,9 @@ console.log(50 == "50");
 console.log(50 === "50");
 console.log("JavaScript" == 'JavaScript');
 console.log("JavaScript" === 'JavaScript');
+*/
+
+// string Method
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
+console.log(part);

@@ -1,4 +1,5 @@
 
+/*
 let js = "JavaScript is a programming language.";
 
 console.log(js.length);
@@ -21,3 +22,15 @@ console.log(js.search("programming"));
 console.log(js.replace("JavaScript", "PHP"));
 console.log(js.charCodeAt(1));
 console.log(js.repeat(5));
+*/
+
+// Escape character
+let text = "We are the so-called \"Vikings\" from the north.";
+console.log(text);
+
+let text2= 'It\'s alright.';
+console.log(text2);
+
+let text3 = "The character \\ is called backslash.";
+
+console.log(text3);

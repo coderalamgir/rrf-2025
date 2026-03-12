@@ -40,8 +40,57 @@ const numbers = [ 71, 72, 73, 74, 75, 76, 77, 78,79];
 // console.log(numbers);
 
 
-*/
+
 const fruits = ["Apple", "Banana", "Orange", "Mango", "Goava"];
 // fruits.shift();
 fruits.unshift("Jackfruit");
 console.log(fruits);
+
+
+
+const number = [10, 20, 30, 40, 50];
+number.push(60);
+// number.pop()
+// console.log(number);
+document.getElementById("demo").innerHTML = number;
+
+const friends = ["Sajib", "Sagor", "Sakib", "Sohel"];
+console.log(friends);
+friends.push("Sumon");
+document.getElementById("demo1").innerHTML = friends;
+
+
+// Mobile games
+const mobileGames = ["FreeFire", "pubzi", "Surfer"];
+mobileGames.pop();
+document.getElementById("demo2").innerHTML = mobileGames;
+
+const number1 = [ 24, 36, 48, 60];
+number1.unshift(12);
+document.getElementById("demo3").innerHTML = number1;
+
+
+const books = ["PHP Mastering", "Marhaba JavaScript Maro thaba", "HTML", "CSS"];
+books.shift();
+document.getElementById("demo4").innerHTML = books;
+*/
+
+
+//include() function
+const books = ["PHP Mastering", "Marhaba JavaScript Maro thaba", "HTML", "CSS"];
+
+  let exist = books.includes("html");
+  // let index = books.indexOf("css");
+
+  if(exist){
+    document.getElementById("demo4").innerHTML = "Party";
+  }else{
+  document.getElementById("demo4").innerHTML = "No food, We are fasting.";
+}
+
+
+
+
+
+
+

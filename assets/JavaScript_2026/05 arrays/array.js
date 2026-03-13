@@ -88,7 +88,7 @@ const books = ["PHP Mastering", "Marhaba JavaScript Maro thaba", "HTML", "CSS"];
   document.getElementById("demo4").innerHTML = "No food, We are fasting.";
 }
 
-*/
+
 
 const fruits = ["Apple", "Banana", "Mango", "Lychee"];
 
@@ -117,3 +117,65 @@ if ( rained){
 }else{
   console.log("No rain, No pain.");
 }
+
+
+
+const numbers = [12, 98, 45, 63, 21,72];
+for( const num of numbers ){
+  console.log(num);
+}
+
+const fruits = ["Orange", 'Apple', 'Banana', 'Jackfruit', 'watermelon'];
+for( const fruit of fruits ){
+  console.log(fruit);
+}
+
+const favouriteSubjects = ['HTML', 'CSS', 'JavaScript','PHP', 'English'];
+for( const subject of favouriteSubjects ){
+  console.log(subject);
+}
+
+const favFood = ['Biriyani', 'Rice', 'Vasitable', 'Fish', 'Dal',];
+for(const food of favFood){
+  console.log(food);
+}
+console.log(favFood.toString());
+
+const years = [2015, 2020, 1983, 1989];
+for( const year of years ){
+  console.log(year);
+}
+
+
+
+// while loop
+// while( num <= 10 ){
+  //   console.log( " আমি প্রতিদিন কমপক্ষে ৩ ঘন্টা অনুশীলন করব। " );
+  //   num ++;
+  // }
+  let num = 1;
+while( num <= 10 ){
+  console.log(num + " X " + 3 + " = " + num*3);
+  num++;
+}
+
+
+//Merge arrays
+const myGirls = ['Sadika', 'Mim'];
+const myBoys = ['Hasib', 'Akib'];
+const myBoyss = ["Emil", "Tobias", "Linus"];
+const myGirlss = ["Cecilie", "Lone"];
+const myChildren = myGirls.concat(myBoys, myBoyss,myGirlss);
+console.log(myChildren);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const sorted = fruits.sort();
+// console.log(sorted);
+console.log(fruits.toSorted());
+// console.log(fruits.reverse());
+
+    */
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a,b){return a - b});
+console.log(points);

@@ -73,7 +73,7 @@ document.getElementById("demo3").innerHTML = number1;
 const books = ["PHP Mastering", "Marhaba JavaScript Maro thaba", "HTML", "CSS"];
 books.shift();
 document.getElementById("demo4").innerHTML = books;
-*/
+
 
 
 //include() function
@@ -88,9 +88,32 @@ const books = ["PHP Mastering", "Marhaba JavaScript Maro thaba", "HTML", "CSS"];
   document.getElementById("demo4").innerHTML = "No food, We are fasting.";
 }
 
+*/
+
+const fruits = ["Apple", "Banana", "Mango", "Lychee"];
+
+const mango = fruits.includes("Mango");
+
+if ( mango ) {
+  console.log('আম আছে।');
+}else{
+  console.log('আম নেই, গাছে উঠ।');
+}
 
 
+const names = ["Babul", "Alif", "Choton", "Rifat"];
+const named = names.indexOf("Rifat");
+console.log(named);
+
+const cities = ["Dhaka", "Chittagong", "Sylhet", "rajshahi"];
+const city = cities.includes("Rajshahi");
+console.log(city);
 
 
-
-
+const rain = ["Dighi", "Megh", "Borsha", "Brishti"];
+const rained = rain.includes("Brishti");
+if ( rained){
+  console.log("I need Umbrella.");
+}else{
+  console.log("No rain, No pain.");
+}

@@ -27,9 +27,9 @@ if( Number > 0 ){
   console.log(`${Number} It is not a number.`);
 }
 
-*/
 
-  let marks = 30; 
+
+  let marks = 60; 
 
 if( marks >= 33 ) {
   console.log( `You are passed.\n` );
@@ -39,5 +39,20 @@ if( marks >= 33 ) {
 
 
 //Ternary Operator
+  let marks = 60; 
+( marks >= 60 )
+ ? console.log(`You are Passed`)
+ :console.log(`You are Failed`);
 
-( marks >= 60 )? console.log(`You are Passed`) : console.log(`You are Passed`);
+*/
+
+
+
+
+let a = 100, b = 20, c = 30;
+
+let max = (a > b)
+? (a > c ? a : c)
+: (b > c ? b : c);
+
+console.log("Max number is", max);

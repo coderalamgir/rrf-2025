@@ -45,5 +45,8 @@ function myFunction(total, value, index, array){
     
 }
  
-const newNumbers = numbers.reduce(myFunction, 10);
+const newNumbers = numbers.reduce(myFunction, 100);
 console.log(newNumbers);
+
+const d = new Date(2018);
+console.log(d);

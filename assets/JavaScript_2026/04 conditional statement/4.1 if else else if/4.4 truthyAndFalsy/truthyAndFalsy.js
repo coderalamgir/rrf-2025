@@ -16,7 +16,7 @@ Falsy Values
     5. {}
     6. []
     7. function(){}
-*/
+
 
 console.log(Boolean([]));
 console.log(Boolean({}));
@@ -28,3 +28,26 @@ console.log(Boolean(NaN));
 
 const products = [];
 console.log(products.length ? "Showing Products" : "NO Products available. ");
+
+
+
+const numbers = [45, 4, 9, 55, 96];
+
+function myFunction(value, index, array){
+  console.log(value);
+  // console.log(index);
+  // console.log(array);
+  console.log("----------------")
+}
+numbers.forEach(myFunction);
+*/
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+
+numbers.forEach(myFunction);
+
+function myFunction (value, index, array){
+  console.log(value );
+  console.log("---------------");
+}

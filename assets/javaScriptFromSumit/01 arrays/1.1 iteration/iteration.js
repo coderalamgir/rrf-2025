@@ -36,7 +36,7 @@ function myFunction(value, index, array){
  
 const newNumbers = numbers.filter(myFunction);
 console.log(newNumbers);
-*/
+
 
 //reduce();
 const numbers = [45, 4, 9, 16, 25];
@@ -47,6 +47,7 @@ function myFunction(total, value, index, array){
  
 const newNumbers = numbers.reduce(myFunction, 100);
 console.log(newNumbers);
+*/
 
-const d = new Date(2018);
+const d = new Date(2024);
 console.log(d);

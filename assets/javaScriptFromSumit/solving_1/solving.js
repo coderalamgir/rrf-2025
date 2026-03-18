@@ -1,4 +1,4 @@
-
+/*
 
 // problem solving One
 // লুডু খেলায় ১-৬ পর্যন্ত সংখ্যাগুলো randomly কিভাবে করা যায় ?
@@ -44,7 +44,21 @@
       return count;
     }
 
-
-
-
     console.log(countVowels("I love Bangladesh. Bangladesh is my home country."));
+    */
+
+
+
+
+
+    // Extra practice
+    console.log("Sadika is sitting on the chair.");
+    
+    function sleep(name, toy){
+      console.log(`${name} is playing to take his ${toy}`);
+    }
+    sleep("Akib", "bicycle"); 
+    sleep("Sadik", "Arts"); 
+    sleep("Popy", "Mobile"); 
+    sleep("Alamgir", "computer"); 
+

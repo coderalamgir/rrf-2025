@@ -1,0 +1,76 @@
+
+*{
+  margin:0;padding:0;
+}
+body{
+  margin-left:40px
+}
+.border-box{
+  width:200px;
+  height:200px;
+  border:1px solid blue;
+  border-radius:50%;
+  animation: orbit 3s linear infinite;
+}
+
+.moving_box{
+  width:50px;
+  height:50px;
+  background-color:#fe5d9f;
+  border-radius:50%;
+  /*animation-name: moveBox;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; 
+  animation-delay: 0s;
+  animation-iteration-count:infinite;
+  animation-direction:normal ;
+   animation-fill-mode:both 
+  animation-play-state:running;
+  */
+
+}
+
+.moving_box:hover{
+  /* animation-play-state:paused; */
+}
+
+
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes leftToRight{
+  from{
+    transform:translate(-400px);
+  }
+  to{
+    transform:translate(300px);
+  }
+
+}
+
+
+
+
+@keyframes moveBox{
+  0%, 100%{
+    transform:translate(0, 0);
+  }
+  25%{
+    transform:translate(300px, 0);
+  }
+  50%{
+    transform:translate(300px, 300px);
+  }
+  75%{
+    transform:translate(0, 300px);
+  }
+}

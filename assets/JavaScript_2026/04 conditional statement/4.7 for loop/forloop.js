@@ -200,7 +200,7 @@ for ( i = 1; i <= 10; i++ ) {
       }
       console.log(i);
     }
-  */ 
+
 
   // ৯১ থেকে ১২০ পর্যন্ত সংখ্যাগুলো প্রিন্ট করতে চাই। কিন্তু ১০ দিয়ে বিভাজ্য সংখ্যা  বাদে।
 
@@ -210,3 +210,22 @@ for ( i = 1; i <= 10; i++ ) {
       }
       console.log(i);
     }
+  */ 
+ /*
+    const cars = ['A', 'B', 'C', 'D', 'E'];
+    for( i = 0; i < cars.length; i++ ){
+      console.log(i);
+    }
+  */
+  
+    const cars = ['A', 'B', 'C', 'D', 'E'];
+    
+    let i = 0;
+    let len = cars.length;
+    let text = "";
+
+    for(; i < len ; i++ ){
+      console.log("This is " + i);
+    }
+
+

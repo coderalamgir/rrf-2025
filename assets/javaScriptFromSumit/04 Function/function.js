@@ -98,3 +98,10 @@
   }
 
   add(5, 71);
+
+
+  function StyledBorder(){
+    document.getElementById('styled').style.borderStyle=" outset inset dotted double ";
+    document.getElementById('styled').style.borderColor=" red ";
+    document.getElementById('styled').style.borderWidth=" 10px ";
+  }

@@ -3,3 +3,13 @@
   padding:0;
   box-sizing:border-box;
 }
+
+
+.heading{
+  /* text-shadow: 3px 3px red; */
+  margin:50px auto;
+  width: 500px;
+  text-align: justify;
+  border: 2px solid salmon;
+  padding: 10px;
+}

@@ -105,5 +105,14 @@ if( age > 18  && height > 60 ){
     if( shirtPrice > 1000 && discount == 20 ){
         console.log("You will get discount.");
     }
+
+// ৫০০০ টাকার উপরে কেনাকাটা করলে ১০% ডিসকাউন্ট পাবেন। এক কম হলে পাবেন না।
+    const price = 5500;
+    if( price > 5000 ){
+        const discount = price / 100 * 10;
+        const pay = price - discount;
+        console.log("Your total bill with discount is: " + pay + " TK.");
+    }else{
+        console.log("Your total bill without discount is: " + price + " TK.");
+    }
 */
-    const price = 6500;

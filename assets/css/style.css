@@ -3,6 +3,7 @@
   padding:0;
   box-sizing:border-box;
 }
+<<<<<<< HEAD
 .main-container{
   margin:10px auto;
   width:1200px;
@@ -31,4 +32,15 @@ body {
   text-decoration-thickness:5px; */
   text-decoration: underline red wavy 5px;
 
+=======
+
+
+.heading{
+  /* text-shadow: 3px 3px red; */
+  margin:50px auto;
+  width: 500px;
+  text-align: justify;
+  border: 2px solid salmon;
+  padding: 10px;
+>>>>>>> 7d7155a1a7932c5665a0b3e99e16339fdff2c995
 }

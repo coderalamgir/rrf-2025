@@ -115,4 +115,101 @@ if( age > 18  && height > 60 ){
     }else{
         console.log("Your total bill without discount is: " + price + " TK.");
     }
+
+
+// ৫০০০ হাজার বা তার বেশি টাকার কেনাকাটা করলে ১০% ছাড়।  4০০০ হাজার বা তার বেশি টাকার কেনাকাটা করলে 5% ছাড়। 3০০০ হাজার বা তার বেশি টাকার কেনাকাটা করলে 3% ছাড়। 3০০০ হাজার টাকার কম কেনাকাটা করলে কোন ছাড় পাবে না। 
+const price = 2000;
+if(price >= 5000){
+    const discount = price / 100 * 10;
+    const pay = price - discount;
+    console.log(pay);
+}else if( price >= 4000 ){
+    const discount = price / 100 * 5;
+    const pay = price - discount;
+    console.log(pay);
+}else if(price >= 3000){
+    const discount = price / 100 * 3;
+    const pay = price - discount;
+    console.log(pay);
+}else{
+    console.log(price);
+}
+
+    const price = 2900;
+
+    if( price > 6000 ){
+        const discount = price / 100 * 15;
+        const pay = price - discount;
+        console.log(pay);
+    }else if( price > 3000 ){
+        const discount = price / 100 * 5;
+        const pay = price - discount;
+        console.log(pay);
+    }else{
+        console.log(price);
+    }
+
+
+const age = 61;
+const price = 450;
+
+if( age > 60 ){
+    const discount = price / 100 * 50;
+    const pay = price - discount;
+    console.log(pay);
+}else if( age < 12 ){
+    console.log("This food is free for you.");
+}
+
+    const balance = 900;
+
+    if( balance > 5000 ){
+        console.log("তুই ধনী আমাকে বিয়া কর।");
+    }else if( balance > 1000 ){
+        console.log("বিন্দাস লাইফ ইনজয় কর।");
+    }else{
+        console.log("ডিপোজিট কর।");
+    }
+
+    const marks = 40;
+
+    if( marks > 80 ){
+        console.log("A+");
+    }else if(marks > 50){
+        console.log("Pass");
+    }else{
+        console.log("Fail");
+    }
+
+    const bookPages = 590;
+
+    if( bookPages < 100 ){
+        console.log("Small Book");
+    }else if( bookPages < 500 ){
+        console.log("Mid-size Book");
+    }else{
+        console.log("Heart attack size Book");
+    }
+
+
+const tempareture = 22;
+
+if( tempareture < 0 ){
+    console.log("Ice");
+}else if( tempareture < 20 ){
+    console.log("Cool Cool");
+}else{
+    console.log("Hot Hot");
+}
+ 
+    const level = 69;
+
+    if( level < 10 ){
+        console.log("Novice");
+    }else if( level < 50 ){
+        console.log("Expert");
+    }else{
+        console.log("Pro Gamer");
+    }
+    
 */

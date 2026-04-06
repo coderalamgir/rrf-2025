@@ -211,5 +211,5 @@ if( tempareture < 0 ){
     }else{
         console.log("Pro Gamer");
     }
-    
 */
+

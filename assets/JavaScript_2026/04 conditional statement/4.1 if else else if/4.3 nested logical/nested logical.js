@@ -211,5 +211,100 @@ if( tempareture < 0 ){
     }else{
         console.log("Pro Gamer");
     }
-*/
 
+
+    const inviteMe = true;
+    const money = 900;
+    // if(inviteMe == true){
+    //     console.log("I will go.");
+        
+    //     if(money > 1000){
+    //         console.log("I will give you a special gift.");
+    //     }else{
+    //         console.log("I will go without gift.");
+    //     }
+
+    // }else{
+    //     console.log("I will delete you from my friend list.");
+    // }
+
+    if( inviteMe == true && money > 1000 ){
+        console.log( " I will go & give a special gift." );
+    }else if( inviteMe == true && money < 1000){
+        console.log(" I will go without gift.");
+    }else{
+        console.log("I will delete you from my friend list.");
+
+    }
+
+    const guest = true;
+    const isEat = "Tea";
+
+    if( isEat == "Tea" ){
+        console.log("");
+    }else{
+    console.log("বসে বসে স্টার জলসা দেখুন।");
+    }
+
+
+let isLeader = true;
+if(isLeader){
+    console.log(" Government money is my money.");
+}
+
+
+const isPassed = false;
+if( !isPassed ){
+    console.log("আজকে খাওয়া দওয়া বন্ধ।");
+}
+
+
+//  const age = 20;
+//  if( age >= 18 ){
+//     console.log("Vote for the hot.");
+//  }else{
+//     console.log("You are not eligible to vote.");
+//  }
+const age = 10;
+ age > 18 ? console.log("Eligible"): console.log("Not Eligible");
+
+    let price =  500;
+    let isLeader = false;
+    if(!isLeader){
+        price = 0;
+        console.log(price);
+
+    }else{
+        price = price + 100;
+        console.log(price);
+    }
+
+    const price = 3300;
+    const cashback = 500;
+
+    price > 3000 ? console.log(cashback): console.log(0);
+
+    const age = 14;
+    age > 15 ? console.log("Teenager"):console.log("Child");
+    
+   const isLoggin = false;
+   isLoggin == true ? console.log("Welcome back"):console.log("Please login");
+
+   const isTankFull = false;
+
+   isTankFull == true ? console.log("Ready for a long drive."): console.log("Fill the tank.");
+   
+  const passed = true;
+  passed == true ? console.log(" Party time. "): console.log(" Hard study for Next Semester.");
+  
+  const sunny = false;
+  if(sunny == false){
+    console.log("Stay Home.");
+  }
+
+  const expensive = false;
+  if( expensive == false ){
+    console.log("I will buy this item.");
+  }
+    */
+   

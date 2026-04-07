@@ -306,5 +306,44 @@ const age = 10;
   if( expensive == false ){
     console.log("I will buy this item.");
   }
-    */
-   
+    
+   // একটা অ্যারের বিজোড় সংখ্যাগুলোর গড় বের কর।
+   function oddAverage(numbers){
+        const odds = [];
+        for(const number of numbers){
+            if( number % 2 === 1 ){
+                odds.push(number);
+            };
+        }
+        // console.log(odds);
+        let sum = 0;
+        for( const number of odds ){
+            sum += number;
+            // console.log(sum);
+        }
+        const count = odds.length;
+        const avg = sum / count;
+        return avg;
+   }
+
+   const numbers = [42, 96, 7];
+//    const nums = [12, 13, 63, 11, 24, 31];
+//    const oddNumberAvg = oddAverage(numbers);
+   const avg = oddAverage(numbers);
+   console.log('Average of the odd numbers is: ' + avg);
+   */
+  // অ্যারে থেকে ডুপ্লিকেট মান সরিয়ে ক্লিন একটি অ্যারে তৈরি করি।
+
+  const students = ["abul", "babul", "cabul", "abul", "babul", "cabul"];
+
+    function noDuplicate(array){
+        const unique = [];
+        for( const item of array ){
+            if( unique.includes(item) === false){
+                unique.push(item);
+            }
+        }
+        return unique;
+    }
+    const uniqueArray = noDuplicate(students);
+    console.log(uniqueArray);

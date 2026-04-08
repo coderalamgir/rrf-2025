@@ -331,7 +331,7 @@ const age = 10;
 //    const oddNumberAvg = oddAverage(numbers);
    const avg = oddAverage(numbers);
    console.log('Average of the odd numbers is: ' + avg);
-   */
+   
   // অ্যারে থেকে ডুপ্লিকেট মান সরিয়ে ক্লিন একটি অ্যারে তৈরি করি।
 
   const students = ["abul", "babul", "cabul", "abul", "babul", "cabul"];
@@ -347,3 +347,112 @@ const age = 10;
     }
     const uniqueArray = noDuplicate(students);
     console.log(uniqueArray);
+
+
+// function এর সাহায্যে কোন সংখ্যাকে দ্বিগুন করা।
+    function doubleIt( number ){
+        const doubled = number * 20;
+        console.log(doubled);
+    }
+
+    doubleIt(10);
+    doubleIt(100);
+    doubleIt(1000);
+
+// function এর সাহায্যে কোন সংখ্যার বর্গ করা।
+function square(number){
+    const borgo = number * number;
+    console.log('Square of ' + number + " is: " + borgo);
+}
+square(2);
+square(8);
+square(12);
+
+// function এর সাহায্যে দুইটা প্যারামিটারকে যোগ করা।
+function add(num1, num2){
+    const sum = num1 + num2;
+    console.log(sum);
+}
+add(60, 40);
+
+// function এর সাহায্যে একাধিক প্যারামিটারকে যোগ করা।
+function addAll(a, b, c, d, e){
+    const total = a + b + c + d + e;
+    console.log(total);
+}
+addAll(3,4,6,7,1);
+
+// function এর সাহায্যে বিয়োগ করা।
+    function difference( num1, num2 ){
+        const diff = num1 - num2;
+        console.log(diff);
+    }
+
+    const fatherAge = 43;
+    const daughterAge = 10;
+    difference(fatherAge, daughterAge);
+
+function addNumber(a, b){
+    console.log(arguments);
+    return a + b;
+}
+const result = addNumber(5, 8, 9, 16);
+// console.log(result);
+
+
+function ageAdd(fatherAge, sonAge){
+    const added = fatherAge + sonAge;
+    console.log(added);
+}
+
+const fatherAge = 40;
+const sonAge = 10;
+ageAdd(fatherAge, sonAge);
+
+
+function multiply( x, y){
+    const multiplied = x * y;
+    console.log(multiplied);
+}
+
+multiply(20, 15);
+
+//নম্বর বের করার ফাংশন
+
+function addMarks( Math, English, Bangla){
+    const totalMarks = Math + English + Bangla;
+    console.log(totalMarks);
+}
+addMarks(85, 90, 83);
+
+// বয়স বের করার ফাংশন
+function ageCalc(currentYear, presentYear){
+    const calculated = currentYear - presentYear;
+    console.log(calculated);
+}
+ageCalc(2026, 1990);
+
+
+// লাউ কেনার ফাংশন।
+function buyLau(taka, price){
+    const perLau = taka/price;
+    console.log(perLau);
+}
+
+const perpice = 35;
+const taka = 105;
+buyLau(taka, perpice);
+
+function average(a, b, c, d){
+    const avg = (a + b + c + d) / 4;
+    console.log(avg);
+
+}
+average(10, 12, 8, 10);
+*/
+function selling_price(benefit, buyingPrice){
+    const soled = benefit + buyingPrice;
+    console.log(soled);
+}
+const benefited = 250;
+selling_price(benefited, 3000);

@@ -449,10 +449,87 @@ function average(a, b, c, d){
 
 }
 average(10, 12, 8, 10);
-*/
+
 function selling_price(benefit, buyingPrice){
     const soled = benefit + buyingPrice;
     console.log(soled);
 }
 const benefited = 250;
 selling_price(benefited, 3000);
+
+
+// কোন একটা সংখ্যা জোড় হলে true এবং বিজোড় হলে false
+function isEven(num){
+    if(num % 2 === 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(isEven(15873));
+console.log(isEven(1256874));
+
+// কোন একটা সংখ্যা জোড় হলে true এবং বিজোড় হলে false
+function isOdd(num){
+    if(num % 2 === 1){
+        return true;
+    }
+    return false;
+}
+console.log(isOdd(12));
+
+function isGreater(num){
+    if(num > 10){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(isGreater(30));
+
+function isGreater1(num){
+    if(num % 13 === 0){
+        return true;
+    }
+    return false;
+}
+console.log(isGreater1(104));
+
+function totalPrice(rice, curry, drinks){
+    return rice + curry + drinks;
+    
+}
+console.log(totalPrice(25, 60, 15));
+
+function ageCalculate(age){
+    if( age > 18 ){
+        // return "Eligible for Voting";
+        console.log("Eligible for Voting");
+    }else{
+
+        console.log("Not Eligible");
+    }
+    // return "Not Eligible";
+}
+// console.log(ageCalculate(3));
+ageCalculate(3);
+
+function textLength(text){
+    return text.length;
+}
+console.log(avg("Akib islam"));
+
+function avgerage( num1, num2, num3 ){
+    return (num1 + num2 + num3) / 3;
+}
+console.log(avgerage(20, 50, 20));
+*/
+function evenSizedString(str){
+    const size = str.length;
+    if( size % 2 === 0 ){
+        console.log("Even Size.");
+    }else{
+        console.log("Odd Size.");
+    }
+}
+evenSizedString("Dhaka");

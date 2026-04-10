@@ -119,7 +119,7 @@ if(movieTime <= "9pm"){
   const bill2 = add(shirt, pant);
   const final = bill1 + bill2;
     console.log(final);
-    */
+
   function doMath( num1, num2 ){
     const sum = num1 + num2;
     const diff = num1 - num2;
@@ -130,3 +130,94 @@ if(movieTime <= "9pm"){
 
   const final = doMath(6, 4);
   console.log(final);
+
+  // একটা স্ট্রিং জোড় না বিজোড়। তা ফাংশন এর মাধ্যমে দেখাও।
+  // step # 1 ফাংশন ঠিকমত কাজ করছে কি না।
+  function evenSizedString(str){
+    console.log(str);
+  }
+  evenSizedString("Dhaka");
+
+  // step # 2 string length বের করব।
+    function evenSizedString(str){
+      const size = str.length;
+    console.log(str, size);
+  }
+  evenSizedString("Dhaka");
+
+  // step # 3 এখন চেকিং দিব string length জোড় কি না।
+  function evenSizedString(str){
+    const size = str.length;
+    if( size % 2 === 0 ){
+      console.log("Even size");
+    }else{
+      console.log("Odd size");
+    }
+  }
+  evenSizedString("Akib");
+
+   // step # 3 এখন চেকিং দিব string length জোড় কি না।
+  function evenSizedString(str){
+    const size = str.length;
+    if( size % 2 === 0 ){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  console.log(evenSizedString("Dhaka"));
+
+   //প্রশ্ন: দুইটা প্যারামিটার নিব। একটা সংখ্যা দ্বিতীয়টি বুলিয়ান। শর্ত দ্বিতীয়টি true হলে ২ দিয়ে গুন হবে। আর false হলে তিন দিয়ে গুন হবে।
+   function doubleOrTriple( num, doDouble ){
+      if( doDouble === true ){
+        const result = num * 2;
+        return result;
+      }else{
+        const result = num * 3;
+        return result;
+      } 
+   }
+   console.log(doubleOrTriple(5, true));
+   console.log(doubleOrTriple(5, false));
+
+  // একটা এ্যারের মধ্যে কতগুলো আইটেম আছে তা বের কর।
+  function numberOfElement(nums){
+    const len = nums.length;
+    return len;
+  }
+  const length = numberOfElement([12, 45, 78, 45, 121254, 4,5]);
+  console.log(length);
+   
+    function numberOfElement(nums){
+    const len = nums.length;
+    if( len % 2 === 0 ){
+      return "Even";
+    }else{
+      return "Odd";
+    }
+    
+  }
+  const length = numberOfElement([12, 45, 78, 45, 121254, 4, 5, 3]);
+  console.log(length);
+
+
+// একটা ফাংশন বানাতে হবে। যেখানে একটা নাম দিলে তার প্রথম অক্ষর দেখাবে।
+  function firstLetter(letter){
+    const name = letter.charAt(0);
+    return name;
+  }
+  const named = firstLetter("Akib")
+  console.log(named);
+*/
+// 3 একটা ফাংশন বানাতে হবে। যেখানে একটা সংখ্যা দিব। সংখ্যাটি ১০ থেকে বড় হলে, ১০ দিয়ে ভাগ করব। আর ১০ এর ছোট হলে, ১০ দিয়ে গুন করবে। তারপর রেজাল্ট রিটার্ন করবে।
+function divededOrMultiply(num){
+  if( num > 10 ){
+    const divided = num / 10;
+    return divided;
+  }else{
+    const multipy = num * 10;
+    return multipy;
+  }
+}
+const result = divededOrMultiply(5)
+console.log(result);

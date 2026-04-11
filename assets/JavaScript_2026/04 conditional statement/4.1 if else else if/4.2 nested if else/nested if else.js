@@ -208,7 +208,7 @@ if(movieTime <= "9pm"){
   }
   const named = firstLetter("Akib")
   console.log(named);
-*/
+
 // 3 একটা ফাংশন বানাতে হবে। যেখানে একটা সংখ্যা দিব। সংখ্যাটি ১০ থেকে বড় হলে, ১০ দিয়ে ভাগ করব। আর ১০ এর ছোট হলে, ১০ দিয়ে গুন করবে। তারপর রেজাল্ট রিটার্ন করবে।
 function divededOrMultiply(num){
   if( num > 10 ){
@@ -221,3 +221,5 @@ function divededOrMultiply(num){
 }
 const result = divededOrMultiply(5)
 console.log(result);
+*/
+//একটা ফাংশন লি

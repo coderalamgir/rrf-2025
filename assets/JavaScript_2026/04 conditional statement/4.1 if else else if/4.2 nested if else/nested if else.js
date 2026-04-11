@@ -295,3 +295,4 @@ console.log(final);
  const sum = sumOfNumbers(nums);
 >>>>>>> ed3e7e777011d21ee4a6f8930eb1893e22fa1add
  */
+

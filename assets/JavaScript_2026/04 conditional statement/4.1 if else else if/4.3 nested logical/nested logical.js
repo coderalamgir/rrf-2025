@@ -523,7 +523,7 @@ function avgerage( num1, num2, num3 ){
     return (num1 + num2 + num3) / 3;
 }
 console.log(avgerage(20, 50, 20));
-*/
+
 function evenSizedString(str){
     const size = str.length;
     if( size % 2 === 0 ){
@@ -533,3 +533,4 @@ function evenSizedString(str){
     }
 }
 evenSizedString("Dhaka");
+*/

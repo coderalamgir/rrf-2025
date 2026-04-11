@@ -280,7 +280,7 @@ console.log(final);
  }
  const result = sumOfNumbers([12, 45, 6, 8, 14]);
  console.log(result);
- */
+
 // ‍step 4
  // function এর ভিত ের এবং লুপ এর বাইরে একটা ভ্যারিয়েবল ডিক্লেয়ার করব। আমরা যেহেতু যোগ - বিয়োগ এর কাজ করছি তাই ভ্যারিয়েবল এর ইনিশিয়াল ভ্যালু শুন্য ০ রাখব। এখানে মান যেহেতু পরিবর্তন হবে তাই let দিয়ে ভ্যারিয়েবল ডিক্লেয়ার করব।
  function sumOfNumbers(numbers){
@@ -294,3 +294,4 @@ console.log(final);
  const nums = [54, 62, 12, 6];
  const sum = sumOfNumbers(nums);
 >>>>>>> ed3e7e777011d21ee4a6f8930eb1893e22fa1add
+ */

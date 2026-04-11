@@ -221,5 +221,76 @@ function divededOrMultiply(num){
 }
 const result = divededOrMultiply(5)
 console.log(result);
-*/
+<<<<<<< HEAD
+git 
 //একটা ফাংশন লি
+=======
+
+// 7 # একটা ফাংশন লিখব। যা দুইটা সংখ্যা নিবে। এবং তাদের গুনফল রিটার্ন করবে। তবে গুনফল ১০০ এর বেশি হলে তার অর্ধেক রিটার্ন করবে।
+function divide( num1, num2 ){
+  const multiply = num1 * num2; 
+  if( multiply > 100 ){
+    const mul = multiply / 2;
+    return mul;
+  }else{
+    return multiply;
+  }
+}
+const mul = (divide(10, 2));
+console.log(mul);
+
+// 6 একটা ফাংশন লিখবি। যা দুইটা নাম নিবে। যদি প্রথম নাম এর দৈর্ঘ্য দ্বিতীয় নামের চেয়ে বেশি হয়, তাহলে true অন্যথায় false return করবে।
+function trueOrFalse(name1, name2){
+  const flength = name1.length;
+  const slength = name2.length;
+  if( flength > slength ){
+    return true;
+  }else{
+    return false;
+  }
+}
+const final = trueOrFalse("Sadika sultana", "Akib islam");
+console.log(final);
+
+
+// একটা array এর সমস্ত element এর যোগফল আউটপুুুুট এ দেখাতে হবে।
+ // ‍step 1
+ // function declare & call
+ function sumOfNumbers(){
+  
+ }
+ const result = sumOfNumbers();
+ console.log(result);
+
+  // ‍step 2 
+ // parameter হিসাবে array কে পাঠাব।
+ function sumOfNumbers(numbers){
+  console.log(numbers);
+ }
+ const result = sumOfNumbers([12, 45, 6, 8, 14]);
+ console.log(result);
+ 
+ // ‍step 3
+ // function এর মধ্যে লুপ করে দেখব অ্যারের প্রতিটা উপাদান আলাদা আলাদা পাচ্ছি কি না।
+ function sumOfNumbers(numbers){
+  for(const number of numbers){
+    console.log(number);
+  }
+  
+ }
+ const result = sumOfNumbers([12, 45, 6, 8, 14]);
+ console.log(result);
+ */
+// ‍step 4
+ // function এর ভিত ের এবং লুপ এর বাইরে একটা ভ্যারিয়েবল ডিক্লেয়ার করব। আমরা যেহেতু যোগ - বিয়োগ এর কাজ করছি তাই ভ্যারিয়েবল এর ইনিশিয়াল ভ্যালু শুন্য ০ রাখব। এখানে মান যেহেতু পরিবর্তন হবে তাই let দিয়ে ভ্যারিয়েবল ডিক্লেয়ার করব।
+ function sumOfNumbers(numbers){
+  let sum = 0;
+  for(const number of numbers){
+    sum = sum + number;
+    console.log(sum);
+  }
+  
+ }
+ const nums = [54, 62, 12, 6];
+ const sum = sumOfNumbers(nums);
+>>>>>>> ed3e7e777011d21ee4a6f8930eb1893e22fa1add

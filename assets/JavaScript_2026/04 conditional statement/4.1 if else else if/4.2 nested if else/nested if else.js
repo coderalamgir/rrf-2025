@@ -290,5 +290,8 @@ console.log(final);
  }
  const nums = [54, 62, 12, 6];
  const sum = sumOfNumbers(nums);
+
+//একটা ফাংশন লি
+
  */
 

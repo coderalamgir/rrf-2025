@@ -221,10 +221,7 @@ function divededOrMultiply(num){
 }
 const result = divededOrMultiply(5)
 console.log(result);
-<<<<<<< HEAD
-git 
-//একটা ফাংশন লি
-=======
+
 
 // 7 # একটা ফাংশন লিখব। যা দুইটা সংখ্যা নিবে। এবং তাদের গুনফল রিটার্ন করবে। তবে গুনফল ১০০ এর বেশি হলে তার অর্ধেক রিটার্ন করবে।
 function divide( num1, num2 ){
@@ -293,6 +290,5 @@ console.log(final);
  }
  const nums = [54, 62, 12, 6];
  const sum = sumOfNumbers(nums);
->>>>>>> ed3e7e777011d21ee4a6f8930eb1893e22fa1add
  */
 

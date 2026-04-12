@@ -3,44 +3,11 @@
   padding:0;
   box-sizing:border-box;
 }
-<<<<<<< HEAD
-.main-container{
-  margin:10px auto;
-  width:1200px;
-}
+
 
 body {
   width: 1280px;
   margin: 0 auto;
 }
 
-.one{
-  width: 400px;
-  height: 400px;
-  background: cadetblue;
-  border: 5px solid #000;
-  outline: 5px solid red;
-  outline-offset: -15px;
-  margin: 31px;
-  border-radius: 10px;
-}
 
-.text h1{
-  /* text-decoration-line:underline;
-  text-decoration-color:red;
-  text-decoration-style:wavy;
-  text-decoration-thickness:5px; */
-  text-decoration: underline red wavy 5px;
-
-=======
-
-
-.heading{
-  /* text-shadow: 3px 3px red; */
-  margin:50px auto;
-  width: 500px;
-  text-align: justify;
-  border: 2px solid salmon;
-  padding: 10px;
->>>>>>> 7d7155a1a7932c5665a0b3e99e16339fdff2c995
-}

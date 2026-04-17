@@ -5,7 +5,7 @@
         ১। console.log() এর মাধ্যমে 
         ২। ‍alert() এর মাধ্যমে। 
         ৩। document.write()
-*/
+
 
 // let myName = "Akib Islam";
 // console.log(myName);
@@ -33,4 +33,51 @@
 
     console.log(typeof(income));
     console.log(typeof(userName));
-    
+
+
+const money = 25;
+const rich = money + 25;
+console.log(rich);
+
+let count = 0;
+count = count + 10;
+console.log(count);
+
+
+const numbers = [23, 4, 23, 12, 56];
+numbers[1] = 55;
+numbers.push(8, 9, 56);
+console.log(numbers);
+
+const student = {
+    name: 'moyna pakhi',
+    age:5,
+}
+student.name = 'Kokil kontho'
+
+console.log(student);
+
+function add(num1, num2){
+    const result = num1 + num2;
+    return result;
+
+}
+const sum = add(5);
+console.log(sum);
+
+
+function add( num1, num2 = 0 ){
+    const result = num1 + num2;
+    console.log(num1, num2, result);
+    return result;
+}
+const sum = add(5);
+console.log(sum);
+
+function add(num1 = 0, num2 = 0){
+    const result = num1 + num2;
+    return result;
+}
+const sum = add(10);
+console.log(sum);
+*/

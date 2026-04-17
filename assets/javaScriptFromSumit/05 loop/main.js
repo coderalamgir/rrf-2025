@@ -31,7 +31,68 @@ for (let i = 0; i < 5; i++) {
     // console.log(number);    // শুধুমাত্র index number গুলো পাব।
     console.log(numbers[number]);    // শুধুমাত্র item গুলো পাব।
   }
+
+
+// for loop
+let text = "";
+for( i = 0; i <= 5; i++ ){
+  text = text + " The number is: " + i + "\n";
+}
+console.log(text );
+
+
+// while loop
+let i = 0;
+let txt = "";
+while( i < 4 ){
+  txt = txt + "This is number : " + i + "\n";
+  i++;
+}
+console.log(txt);
+
+
+//do ... while
+
+let text = "";
+let i = 0;
+do{
+  text = text + "The number is " + i + "\n";
+  i++;
+}while(i < 10);
+console.log(text);
+
+// for ... in loop
+const person = {
+  fname: "Akib",
+  lname: "Islam",
+  age: 5
+};
+
+let text = "";
+for( let x in person ){
+  text = text + person[x] + " ";
+}
+
+
+// console.log(x);
+console.log(text);
+
+ 
+// একটা স্ট্রিং এর উপরেও পুনরাবৃত্তি করা যায়।
+const name = "W3schools";
+
+let text = " ";
+for(const x of name){
+  text += x + "\n";
+}
+console.log(text);
+
+// Iterating over an array
+const letters = ["a", "b", "c"];
+
+let txt = " ";
+for(const letter of letters){
+  txt += letter + "\n";
+}
+console.log(txt);
 */
-
-// for of loop এর ব্যবহার
-

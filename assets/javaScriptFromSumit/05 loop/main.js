@@ -96,3 +96,14 @@ for(const letter of letters){
 }
 console.log(txt);
 */
+function sayHello(){
+  return "Hello world let us talk to me.";
+}
+
+function showHello(){
+  document.getElementById('demo').innerHTML = sayHello();
+
+}
+
+const retult = sayHello();
+console.log(sayHello());

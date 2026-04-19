@@ -95,7 +95,7 @@ for(const letter of letters){
   txt += letter + "\n";
 }
 console.log(txt);
-*/
+
 function sayHello(){
   return "Hello world let us talk to me.";
 }
@@ -107,3 +107,39 @@ function showHello(){
 
 const retult = sayHello();
 console.log(sayHello());
+
+
+
+// Arrow function syntax
+const multiply = (a, b) => a * b;
+console.log(multiply(5, 4));
+
+
+
+
+// Standard function Syntax
+function multiply( a, b ){
+  return a * b;
+}
+console.log(multiply(4, 5));
+
+
+//Function Expression Syntax
+const  multiply = function add( a, b ){
+  return a + b;
+};
+
+console.log(multiply(40, 50));
+
+
+//Arrow function syntax
+// const multiply = ( a, b ) => a * b;
+
+// console.log(multiply(2, 3));
+let x = myFunction(4, 3);
+console.log(x);
+
+function myFunction(a, b) {
+  return a * b;
+}
+  */

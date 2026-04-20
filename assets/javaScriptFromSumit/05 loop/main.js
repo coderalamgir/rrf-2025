@@ -200,5 +200,23 @@ const getName = function(){
 
 const message = `না বললে সাদিয়া, আছে আমার ${getName()}!`;
 console.log(message);
-*/
 
+const age = 20;
+const status = `You are ${age > 18? "Adult" : "Minor"}`;
+console.log(status);
+
+
+const user = {
+  name: "Akib",
+  age: 5
+}
+const info =`Name: ${user.name}, Age: ${user.age}`;
+console.log(info);
+
+
+const fruits = ['Apple', 'Banana', 'Mango'];
+const second = `My second favorite fruit is ${fruits[2]}.`;
+console.log(second);
+const list = `My favorite fruits are ${fruits.join(", ")}.`;
+console.log(list);
+*/

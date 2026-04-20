@@ -80,4 +80,18 @@ function add(num1 = 0, num2 = 0){
 }
 const sum = add(10);
 console.log(sum);
+
+function add(a, b) {
+  return a + b;
+}
+
+const add1 = add(2, 3) * 10;
+console.log(add1);
 */
+const title = "Welcome"; 
+const body = "This is a dynamic template";
+const html = `<div>
+    <h1>${title}</h1>
+    <p>${body}</p>
+</div>`;
+console.log(html);

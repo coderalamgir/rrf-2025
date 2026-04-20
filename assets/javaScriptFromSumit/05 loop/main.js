@@ -142,4 +142,63 @@ console.log(x);
 function myFunction(a, b) {
   return a * b;
 }
-  */
+  
+
+
+function add(num1 = 0, num2 = 0, num3 = 0){
+  const result = num1 + num2 + num3;
+  return result;
+}
+
+const sum = add(10, 10, 30);
+console.log(sum);
+
+function add(num1 = 0){
+  const result = num1 + 50;
+  return result;
+}
+const final = add(50);
+console.log(final);
+
+function info( name = "Anonymous", income = 0){
+  const updated = name + " " + "your monthly income is " + income + " TK. ";
+  return updated;
+}
+const final = info(" Alamgir ", 17760 );
+console.log(final);
+
+function square(number = 1){
+  const squared = number * number;
+  return squared;
+}
+const result = square(12);
+console.log(result);
+
+const name = 'Akib';
+const age = 5;
+console.log("Name: " + name + ", Age: " + age);
+console.log(`Name: ${name}, Age: ${age}`);
+
+const a = 10;
+const b = 20;
+const math = `The sum of ${a} and ${b} is ${a + b}`;
+console.log(math);
+
+const email = `আমার সোনার বাংলা
+আমি তোমায় ভালবাসি।
+চিরদিন তোমার আকাশ
+তোমার বাতাস
+আমার প্রানে
+ওমা আমার প্রানে
+বাজাও বাসি সোনার বাংলা
+আমি তোমায় ভাল বাসি।`;
+console.log(email);
+
+const getName = function(){
+  return "Nadia";
+}
+
+const message = `না বললে সাদিয়া, আছে আমার ${getName()}!`;
+console.log(message);
+*/
+

@@ -219,4 +219,20 @@ const second = `My second favorite fruit is ${fruits[2]}.`;
 console.log(second);
 const list = `My favorite fruits are ${fruits.join(", ")}.`;
 console.log(list);
+
+const num1 = 100;
+const num2 = 20;
+const substraction = `defference between ${num1} and ${num2} is ${num1 - num2}!`;
+console.log(substraction);
+
+const employee = {
+  name: "akib",
+  age: 5,
+  salary: 18000
+};
+const info = `Name: ${employee.name},\nAge: ${employee.age},\nSalary: ${employee.salary}`;
+console.log(info);
 */
+const fruits = ['Banana', 'Mango', 'Orange', 'Dates'];
+const random = `Third fruit is ${fruits[2]}.`;
+console.log(random);

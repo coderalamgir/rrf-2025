@@ -307,4 +307,16 @@ const sum = ( a = 10, b = 5 ) => {
 
 const final = sum();
 console.log(final);
+
+// Erorr Validation
+function sum(num1, num2){
+  if( typeof num1 !== 'number' || typeof num2 !== 'number' ){
+    return "Please provide a number.";
+  }
+ 
+  const total = num1 + num2;
+  return total;
+}
+const result = sum(5, 5);
+console.log(result);
 */

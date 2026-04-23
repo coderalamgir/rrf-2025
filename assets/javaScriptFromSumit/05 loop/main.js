@@ -232,7 +232,79 @@ const employee = {
 };
 const info = `Name: ${employee.name},\nAge: ${employee.age},\nSalary: ${employee.salary}`;
 console.log(info);
-*/
+
 const fruits = ['Banana', 'Mango', 'Orange', 'Dates'];
 const random = `Third fruit is ${fruits[2]}.`;
 console.log(random);
+
+
+const a = 50;
+const b = 10;
+const division = `The division of a and b is ${a / b}`;
+console.log(division);
+
+
+const person = {
+  firstName: "Akib",
+  lastName: 'Islam'
+};
+
+const fullName = `Full Name: ${person.firstName} ${person.lastName}!`;
+console.log(fullName);
+
+const animals = ['Cat', 'Dog', 'Elephant'];
+const result = `My favorite animals are: ${animals.join( ", " )}.`;
+console.log(result);
+
+
+function add( a, b ){
+  return a + b;
+  
+}
+
+
+const add = function(a, b){
+  return a + b;
+};
+const result = add(5, 9);
+console.log(result);
+
+
+const add2 = (a, b) => a + b;
+
+const added = add2(5, 5);
+console.log(added);
+
+const student = {
+  name: 'Akib',
+  age: 5
+}
+
+const getName = person => person.name;
+const getAge = person => person.age;
+const age = getAge(student);
+console.log(age);
+
+// ডিফল্ট প্যারামিটারসহ অ্যারো ফাংশন।
+const greet = (name = "Akib") => `Hello, ${name}!`;
+console.log(greet());
+console.log(greet('Sadika'));
+
+const getObject = () => ({key:"value"});
+console.log(getObject());
+
+const numbers = [4, 6, 8, 10, 12];
+const number = () => numbers[1] ;
+console.log(number());
+
+const num = (num1 = 1, num2 = 1, num3 = 1) => num1 * num2 * num3; 
+const multiply = num(3, 3, 3);;
+console.log(multiply);
+
+const sum = ( a = 10, b = 5 ) => {
+  return a + b;
+} ;
+
+const final = sum();
+console.log(final);
+*/

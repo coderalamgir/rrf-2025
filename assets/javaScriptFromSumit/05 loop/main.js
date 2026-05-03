@@ -319,4 +319,242 @@ function sum(num1, num2){
 }
 const result = sum(5, 5);
 console.log(result);
+
+
+function getSecond( numbers ){
+  if( Array.isArray(numbers) == false ){
+    return "Please provide an array";
+  }
+  const second = numbers[2];
+  return second;
+
+}
+const second = getSecond([1, 5, 10]);
+console.log(second);
+
+
+
+function getPrice(product){
+  if( typeof product !== 'Object' ){
+    return "Please provide an object.";
+  }
+  const price = product.price;
+  return price;
+}
+
+const result = getPrice({name: "potato", price: 20, weight: "3kg"});
+console.log(result);
+
+const profile = {
+  name:'Akib',
+  age:5,
+  city:'Kushtia'
+};
+// console.log(profile.city);
+const result = Object.keys(profile);
+const citys = result.includes('city');
+// console.log(result);
+console.log(citys);
+console.log('name' in profile);
+
 */
+/*
+const profile = {
+  name: 'Sadika',
+  age:11,
+  city: 'hakimpur'
+};
+*/
+/*
+if( 'ciy' in profile ){
+  console.log('city Exists.');
+}else{
+  console.log('No city, No Spam.');
+}
+
+
+// মান চেক করার উপায়।
+if( profile.city === 'hakimpur' ){
+  console.log('জ্যামের শহর ঢাকা।');
+}else{
+  console.log('আমার শান্তি গ্রামে।');
+}
+
+
+const person = {
+  name:'Akib',
+  age:5,
+  city:'Hakimpur'
+};
+
+const result = Object.entries(person);
+console.log(result);
+
+
+//অবজেক্ট এর উপর লুপ চালানো for ... in loop ব্যবহার করা হয়।
+const profile = {
+  name: 'Akib',
+  age: 5,
+  city:'Hakimpur'
+};
+
+for( const key in profile ){
+  const value = profile[key];
+  console.log(key.value);
+}
+
+const book = {
+  name: 'JavaScript',
+  writer: 'Jhankar Mahbub',
+  price: 700,
+};
+const key = Object.keys(book);
+console.log(key);
+const value = Object.values(book);
+console.log(value);
+
+// Object.freeze(); Method
+
+const adminUser = {
+  username:'admin',
+  email:'admin@example.com',
+  role:'superadmin'
+};
+Object.freeze(adminUser);
+delete adminUser.role;
+adminUser.adminPassword = "1234567890";
+adminUser.role = 'user';
+
+
+console.log(adminUser);
+
+
+// Object.seal();
+const user = {
+  username: 'akib',
+  email: 'akib@gmail.com',
+  password:'oldpassword'
+};
+
+Object.seal(user);
+user.password = 'newpassword';
+user.age = 5;
+delete user.email;
+console.log(user);
+
+const headphone = {
+  brand:'Sony',
+  price:300,
+  color:'red'
+};
+Object.freeze(headphone);
+headphone.model = "s3";
+console.log(headphone);
+
+const player = {
+  name: 'Messi',
+  goals:800,
+  club: 'Inter Milan'
+};
+Object.freeze(player);
+player.team = 'Argentina';
+console.log(player);
+
+const book = {
+  title: 'Harry Potter',
+  author: 'JK Rowling',
+  pages: 500,
+};
+Object.seal(book);
+book.author = 'Akib Islam',
+console.log(book);
+
+const gadget = {
+  name:'iPhone',
+  price:120000,
+  color:'black'
+};
+delete gadget.price;
+
+console.log(gadget);
+
+const animal = {
+  name: 'Tiger',
+  location:'Sundarban'
+};
+Object.freeze(animal);
+animal.location = 'Bandarban';
+console.log(animal);
+
+const food = {
+  mane: 'Pizza',
+  price:500,
+  size: 'Lage'
+};
+Object.seal(food);
+food.price = 450;
+console.log(food);
+
+// Object Method
+const person = {
+  firstName: 'Akib',
+  lastName: 'Islam',
+  age: 5,
+ 
+};
+  person.fullName = function(){
+    return (this.firstName + " " + this.lastName).toUpperCase();
+  };
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+console.log(person.fullName());
+// const persons = Object.keys(person);
+// const persons = Object.values(person);
+// const persons = Object.entries(person);
+// console.log(persons);
+
+
+// সাধারনত অবজেক্টকে ৪টি উপায়ে দেখানো যায়।
+// প্রথমত অবজেক্ট এর সকল প্রাপার্টিজকে একটি স্ট্রিং এর মধ্যে দেখানো যায়।
+const person = {
+  name: 'akib',
+  age:5,
+  city: 'Hakimpur'
+};
+let txt = person['name'] + "," + person['age'] + "," + person['city'];
+console.log(txt);
+
+
+// দ্বিতীয়ত অবজেক্ট এর সকল প্রাপার্টিজকে একটি লুপ এর মধ্যে দেখানো যায়।
+const person = {
+  name: 'Akib',
+  age:5,
+  city: "Hakimpur"
+};
+
+let text = "";
+for(let x in person ){
+  text += (person[x] + ", ").toUpperCase();
+}
+console.log(text);
+
+// তৃতীয়ত অবজেক্ট এর সকল প্রাপার্টিজকে একটি এ্যারেতে রুপান্তর এর মধ্যে দেখানো যায়। Object.values() এর মাধ্যমে।
+
+// Create an Object
+const person = {
+  name:'Akib',
+  age:5,
+  city: 'Hakimpur'
+};
+
+//Create an Array
+const result =Object.values(person);
+
+// Stringify the Array
+let text = result.toString();
+console.log(result);
+*/
+
+
+

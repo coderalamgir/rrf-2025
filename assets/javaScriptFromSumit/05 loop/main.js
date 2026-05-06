@@ -554,7 +554,89 @@ const result =Object.values(person);
 // Stringify the Array
 let text = result.toString();
 console.log(result);
+
+// Object function constractor for Person object
+function Person(first, last, age, eye){
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  
+}
+
+//Create a person object
+const myFather = new Person('Akib', 'Islam', 5, 'black');
+myFather.nationality = "Bangoli";
+
+// const myMother = new Person('Sadika', 'Sultana', 11, 'black');
+const final = "My Father name is " + myFather.firstName + " " + myFather.lastName + " " + myFather.nationality +".";
+console.log(final);
+
+
+// Math method Or function
+// সবচেয়ে ছোট মান বের করা।
+const min = Math.min(3, 6, 7, 11, 40, 2);
+console.log(min);
+
+// সবচেয়ে বড় মান বের করা।
+const max = Math.max(3, 6, 7, 11, 40, 2);
+console.log(max);
+
+// Absolute মান বের করা।
+console.log(Math.abs(-7));
+console.log(Math.abs(7));
+
+// ভগ্নাংশ থেকে নিকটবর্তী পূর্ন সংখ্যা  পেতে।
+console.log(Math.round(8.7));
+console.log(Math.round(8.2));
+
+// ভগ্নাংশ থেকে নিকটবর্তী ছোট পূর্ন সংখ্যা  পেতে।
+console.log(Math.floor(4.7));
+console.log(Math.floor(4.1));
+
+// ভগ্নাংশ থেকে নিকটবর্তী বড় পূর্ন সংখ্যা  পেতে।
+console.log(Math.ceil(4.7));
+console.log(Math.ceil(4.1));
+
+
+// random / দৈব্য চয়ন সংখ্যা পেতে।
+console.log(Math.random());
+
+const min = Math.min(45, 11, 89, 56, -12, -56);
+console.log(min);
+
+const max = Math.max(21, 36, 67);
+console.log(max);
+
+console.log(Math.round(7.6));  //নিকটবর্তী পূর্নসংখ্যা
+console.log(Math.round(7.2));  //নিকটবর্তী পূর্নসংখ্যা
+
+console.log(Math.floor(9.8));  //নিকটবর্তী পূর্নসংখ্যা ছোট
+console.log(Math.floor(5.3));  //নিকটবর্তী পূর্নসংখ্যা ছোট
+
+console.log(Math.ceil(3.1));  //নিকটবর্তী পূর্নসংখ্যা বড়
+console.log(Math.ceil(6.9));  //নিকটবর্তী পূর্নসংখ্যা বড়
+
+  //Absolute Value
+  console.log(Math.abs(-34));
+
+  // Function
+  function number(decimal){
+    return decimals;
+  }
+  // const final = Math.round(5.8);
+  // const final = Math.floor(5.8);
+  const final = Math.ceil(5.8);
+  console.log(final);
+
+
+// Date Object
+const now = new Date();
+console.log(now);
+
+
+// Regular Expression
+const phone = "01715684469";
+const phonePattern = /^01[3-9]\d{8}$/;
+console.log(phonePattern.test(phone));
 */
-
-
-
